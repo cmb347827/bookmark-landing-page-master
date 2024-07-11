@@ -1,0 +1,84 @@
+
+@import '_globals.scss';
+
+$colors: (
+  Dark Violet: hsl(256, 26%, 20%),
+  Grayish Blue: hsl(216, 30%, 68%),
+  Very Dark Violet: hsl(270, 9%, 17%),
+  Dark Grayish Violet: hsl(273, 4%, 51%),
+  Very Light Gray: hsl(0, 0%, 98%),
+  Very Light Gray2: #E1E1E1,
+  White: #fff,
+  Black: #000,
+);
+$fallback-colors: (
+  DarkViolet CadetBlue RebeccaPurple "Viola Purple" Platinum Silver White Black
+);
+
+@mixin background($url,$position:auto,$size:auto,$repeat:no-repeat,$fixed:fixed,$color:white){
+    background: url($url) $position/$size $repeat $fixed $color; 
+}
+@mixin font-color($color, $fallback-color) {
+  color: $fallback-color;
+  color: $color;
+}
+
+@mixin bg-color($color, $fallback-color) {
+  background-color: $fallback-color;
+  background-color: $color;
+}
+@mixin border-radius($radius...) {
+  border-radius: $radius;
+}
+@mixin margin($args...) {
+  margin: $args;
+}
+@mixin padding($args...) {
+  padding: $args;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+   
+  @include bg-color(map-get($colors,White),nth($fallback-colors,7));
+  @include font-color(map-get($colors,Black),nth($fallback-colors,8));
+  font: {
+     size: $font_size-16;
+     weight: $font_weight-normal;
+	 family: 'DM Serif Display', serif;
+  }
+}
+.hidden{
+    display:none;
+}
+.show{
+    display:block;
+}
+header,main,footer{
+    @include margin(0 auto);
+    width: 90%;
+    max-width: 350px;
+    @media screen and(min-width:960px){
+       max-width: 1300px;
+    }
+}
+header{
+    
+    nav{
+        
+       
+    }
+}
+main{
+    
+}
+footer{
+    
+}
