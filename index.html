@@ -15,12 +15,12 @@
 <body>
         <header class="d-flex">
             <img src="./images/logo-bookmark.svg" alt='' width="148" height="25" >
-            <nav aria-labelledby='navbarCollapse'id='nav' class="container-fluid navbar navbar-expand-lg d-lg-flex align-items-start justify-content-end ">
+            <nav aria-labelledby='navbarCollapse'id='nav' class="container-fluid navbar navbar-expand-md d-md-flex align-items-start justify-content-end ">
                   <button aria-label='Menu' id='menubutton' type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span id='open' class="navbar-toggler-icon navbar-light"></span>
                     <img  id='close' class='hidden' src='./images/icon-close.svg' alt='Close menu.' width="32" height="32">
                   </button>
-                  <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarCollapse">
+                  <div class="collapse navbar-collapse d-md-flex justify-content-end" id="navbarCollapse">
                        <div class="navbar-nav">
                           <a href="#" class="nav-item nav-link active">Features</a>
                           <a href="#" class="nav-item nav-link">Pricing</a>
@@ -31,14 +31,20 @@
             </nav>
        </header>
        <main>
-            <section>
-                A Simple Bookmark Manager
+            <section class="d-flex flex-md-row flex-column">
+                <div class="order-last order-md-first">
+                    <h1>A Simple Bookmark Manager</h1>
 
-                A clean and simple interface to organize your favourite websites. Open a new 
-                browser tab and see your sites load instantly. Try it for free.
-
-                Get it on Chrome
-                Get it on Firefox
+                    <p>A clean and simple interface to organize your favourite websites. Open a new 
+                    browser tab and see your sites load instantly. Try it for free.</p>
+                    <div class="d-flex">
+                        <button type='button'>Get it on Chrome</button>
+                        <button type='button'>Get it on Firefox</button>
+                    </div>
+                </div>
+                <div class="order-first order-md-last">
+                    <img src="./images/illustration-hero.svg" alt="" width="657" height="466">
+                </div>
             </section>
             <section>
                 Features
@@ -135,7 +141,7 @@
 
                 Stay up-to-date with what we’re doing
 
-                Contact Us
+                <button type="submit">Contact Us</button>
             </section>
             <nav>
                 Features
