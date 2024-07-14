@@ -4,6 +4,7 @@ $(window).resize(function(){
 	location.reload();
 });
 
+
 $(window).on('load',function(){
 		
 	$("#navbarCollapse").on("show.bs.collapse", function(){
