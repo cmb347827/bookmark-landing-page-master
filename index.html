@@ -30,9 +30,9 @@
                    </div> 
             </nav>
        </header>
-       <main>
-            <section class="d-flex flex-md-row flex-column">
-                <div class="order-last order-md-first">
+       <main class="container">
+            <section class="row d-flex flex-md-row flex-column align-items-center">
+                <div class="col-6 order-last order-md-first">
                     <h1>A Simple Bookmark Manager</h1>
 
                     <p>A clean and simple interface to organize your favourite websites. Open a new 
@@ -42,11 +42,12 @@
                         <button type='button'>Get it on Firefox</button>
                     </div>
                 </div>
-                <div class="order-first order-md-last">
-                    <img class='img-fluid' src="./images/illustration-hero.svg" alt="" width="657" height="466">
+                <div class="col-6 order-first order-md-last">
+                    <div class="shape transform-right-down"></div>
+                    <img class='img-fluid top-z-index ' src="./images/illustration-hero.svg" alt="" width="657" height="466">
                 </div>
             </section>
-            <section class="">
+            <section class="row">
                 <div class="text-center mt-4">
                     <h2>Features</h2>
 
@@ -55,7 +56,7 @@
                 </div>
                 <ul class="nav nav-underline mb-3" role="tablist">
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="underline-bookmark-tab" data-bs-toggle="pill" data-bs-target="#underline-bookmark" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                      <button class="nav-link active" aria-current="page" id="underline-bookmark-tab" data-bs-toggle="pill" data-bs-target="#underline-bookmark" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
                     </li>
                     <li class="nav-item" role="presentation">
                       <button class="nav-link" id="underline-search-tab" data-bs-toggle="pill" data-bs-target="#underline-search" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
@@ -85,7 +86,7 @@
                         </div>
                   </div>
             </section>
-            <section class="mt-4">
+            <section class="row mt-4">
                 Download the extension
 
                 We’ve got more browsers in the pipeline. Please do let us know if you’ve 
@@ -103,7 +104,7 @@
                 Minimum version 46
                 Add & Install Extension
             </section>
-            <section>
+            <section class="row">
                 Frequently Asked Questions
                 
                 Here are some of our FAQs. If you have any other questions you’d like 
@@ -142,7 +143,7 @@
 
                 More Info
             </section>
-            <section>
+            <section class="row">
                 35,000+ already joined
 
                 Stay up-to-date with what we’re doing

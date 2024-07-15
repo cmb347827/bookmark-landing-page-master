@@ -50,7 +50,8 @@ Users should be able to:
 ### What I learned
   
   -I could reuse code from another project , my junior project insure landing page master , for adding the hamburger menu.
-  -
+  -I could use Bootstrap tabs for the tabs section (see link)
+  -I got rid of the unnesscary scss folder and custom file for breakpoints. I thought for the screenshot in the profile the sizes had to be either 375px and 1440px.
 
 ### Continued development
 

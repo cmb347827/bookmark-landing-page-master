@@ -2,17 +2,16 @@
 @import '_globals.scss';
 
 $colors: (
-  Dark Violet: hsl(256, 26%, 20%),
-  Grayish Blue: hsl(216, 30%, 68%),
-  Very Dark Violet: hsl(270, 9%, 17%),
-  Dark Grayish Violet: hsl(273, 4%, 51%),
-  Very Light Gray: hsl(0, 0%, 98%),
-  Very Light Gray2: #E1E1E1,
-  White: #fff,
-  Black: #000,
+  Soft Blue: hsl(231, 69%, 60%),
+  Soft Red: hsl(0, 94%, 66%), 
+  Grayish Blue: hsl(229, 8%, 60%),
+  Very Dark Blue: hsl(229, 31%, 21%),
+  White: hsl(0,100%,100%),
+  black: hsl(100,0%,0%),
 );
+
 $fallback-colors: (
-  DarkViolet CadetBlue RebeccaPurple "Viola Purple" Platinum Silver White Black
+  'Absolute Zero', 'Alizarin crimson',CadetBlue4, NavyBlue, Snow, black
 );
 
 @mixin background($url,$position:auto,$size:auto,$repeat:no-repeat,$fixed:fixed,$color:white){
@@ -47,8 +46,8 @@ $fallback-colors: (
 html,
 body {
    
-  @include bg-color(map-get($colors,White),nth($fallback-colors,7));
-  @include font-color(map-get($colors,Black),nth($fallback-colors,8));
+  @include bg-color(map-get($colors,White),nth($fallback-colors,5));
+  @include font-color(map-get($colors,Black),nth($fallback-colors,6));
   font: {
      size: $font_size-16;
      weight: $font_weight-normal;
@@ -61,17 +60,41 @@ body {
 .show{
     display:block;
 }
+.shape{
+  width:100%;
+  @include bg-color(map-get($colors,Soft Blue),nth($fallback-colors,1));
+  //clip-path:inset(0% 45% 0% 45% round 10px);
+  border-radius: 45px;
+}
+.shape:before{
+  content: "";
+  display: block;
+  padding-top: 25%;
+}
+
+.transform-up{
+  transform: translateY(-35%);
+}
+.transform-right-down{
+  transform: translate(5%,25%);
+}
+.top-z-index{
+  //needed for z-index.
+  position: relative;
+  z-index: 1;
+  opacity:1;
+}
 header,main,footer{
     img{
       
     }
     @include margin(0 auto);
     width: 90%;
-    @include padding(4em);
+    @include padding(1em);
     // max-width: 375px;
     @media screen and(min-width: 768px){
         //max-width: 1440px;
-        @include padding(8em);
+        @include padding(2em);
     }
 }
 header{
