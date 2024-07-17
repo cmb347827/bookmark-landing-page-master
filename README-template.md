@@ -51,7 +51,11 @@ Users should be able to:
   
   -I could reuse code from another project , my junior project insure landing page master , for adding the hamburger menu.
   -I could use Bootstrap tabs for the tabs section (see link)
-  -I got rid of the unnesscary scss folder and custom file for breakpoints. I thought for the screenshot in the profile the sizes had to be either 375px and 1440px.
+  -I got rid of the unnesscary scss folder and custom file for breakpoints. I thought for the screenshot in the profile at frontendmentor the sizes had to be either 375px and 1440px
+  - for the responsive pill shaped blue background , I had to use padding and :before(see link) 
+    and % for the size/position(see another link)
+  - back to using BEM naming
+
 
 ### Continued development
 
