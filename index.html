@@ -33,7 +33,7 @@
        </header>
        <main class="container">
             <section class="row container__firstchild d-flex flex-md-row flex-column align-items-center">
-                <div class="col-6 order-last order-md-first">
+                <div class="col order-last order-md-first">
                     <h1>A Simple Bookmark Manager</h1>
 
                     <p>A clean and simple interface to organize your favourite websites. Open a new 
@@ -43,51 +43,76 @@
                         <button type='button'>Get it on Firefox</button>
                     </div>
                 </div>
-                <div class="col-6 order-first order-md-last ">
-                    <div class="shape transform-right-down"></div>
+                <div class="col order-first order-md-last relativeouter">
+                    <div class="shape-top transform-right-down"></div>
                     <img class='img-fluid top-z-index ' src="./images/illustration-hero.svg" alt="" width="657" height="466">
                 </div>
             </section>
-            <section class="row">
-                <div class="text-center mt-4">
+            
+            <section class="row container__secondchild d-flex flex-column align-items-center">
+                <div class=" text-center mt-4">
                     <h2>Features</h2>
 
                     <p>Our aim is to make it quick and easy for you to access your favourite websites. 
                     Your bookmarks sync between your devices so you can access them on the go.</p>
                 </div>
-                <ul class="nav nav-underline mb-3" role="tablist">
+                <ul class="nav nav-underline mb-3 d-flex flex-md-row flex-column align-items-center" role="tablist">
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link active" aria-current="page" id="underline-bookmark-tab" data-bs-toggle="pill" data-bs-target="#underline-bookmark" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                      <button class="nav-link active" aria-current="page" id="underline-bookmark-tab" data-bs-toggle="pill" data-bs-target="#underline-bookmark" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Simple Bookmarking</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="underline-search-tab" data-bs-toggle="pill" data-bs-target="#underline-search" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                      <button class="nav-link" id="underline-search-tab" data-bs-toggle="pill" data-bs-target="#underline-search" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Speedy Searching</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="underline-share-tab" data-bs-toggle="pill" data-bs-target="#underline-share" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+                      <button class="nav-link" id="underline-share-tab" data-bs-toggle="pill" data-bs-target="#underline-share" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Data Sharing</button>
                     </li>
                   </ul>
                   <div class="tab-content" >
-                        <div class="tab-pane fade show active" id="underline-bookmark" role="tabpanel" aria-labelledby="underline-bookmark-tab" tabindex="0">
-                            <h3>Bookmark in one click</h3>
-                            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
-                            gives you complete control over how you manage your favourite sites.</p>
-                            <button type='button'>More Info</button>
+                        <div class="tab-pane fade show active " id="underline-bookmark" role="tabpanel" aria-labelledby="underline-bookmark-tab" tabindex="0">
+                            <div class="d-flex flex-md-row flex-column ">
+                                <div class="order-last ">
+                                    <h3>Bookmark in one click</h3>
+                                    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                                    gives you complete control over how you manage your favourite sites.</p>
+                                    <button type='button'>More Info</button>
+                                </div>
+                                <div class="order-first ">
+                                    <div class="shape-bottom transform-left-down"></div>
+                                    <img class='img-fluid top-z-index ' src="./images/illustration-features-tab-1.svg" alt="" width="536" height="346">
+                                </div>
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="underline-search" role="tabpanel" aria-labelledby="underline-search-tab" tabindex="0">
-                            <h3>Intelligent search</h3>
-                            <p>Our powerful search feature will help you find saved sites in no time at all. 
-                                No need to trawl through all of your bookmarks.</p>
-                            <button type="button"> More Info</button>
+                        <div class="tab-pane fade  " id="underline-search" role="tabpanel" aria-labelledby="underline-search-tab" tabindex="0">
+                            <div class='d-flex flex-md-row flex-column'>
+                                <div class="order-last">
+                                    <h3>Intelligent search</h3>
+                                    <p>Our powerful search feature will help you find saved sites in no time at all. 
+                                        No need to trawl through all of your bookmarks.</p>
+                                    <button type="button"> More Info</button>
+                                </div>
+                                <div class="order-first">
+                                    <div class="shape-bottom transform-left-down"></div>
+                                    <img class='img-fluid top-z-index ' src="./images/illustration-features-tab-2.svg" alt="" width="536" height="346">
+                                </div>
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="underline-share" role="tabpanel" aria-labelledby="underline-share-tab" tabindex="0">
-                            <h3>Share your bookmarks</h3>
-                            <p>Easily share your bookmarks and collections with others. Create a shareable 
-                            link that you can send at the click of a button.</p>
-                            <button type='button'>More Info</button>
+                        <div class="tab-pane fade  " id="underline-share" role="tabpanel" aria-labelledby="underline-share-tab" tabindex="0">
+                            <div class="d-flex flex-md-row flex-column">
+                                <div class="order-last">
+                                    <h3>Share your bookmarks</h3>
+                                    <p>Easily share your bookmarks and collections with others. Create a shareable 
+                                    link that you can send at the click of a button.</p>
+                                    <button type='button'>More Info</button>
+                                </div>
+                                <div class="col order-first ">
+                                    <div class="shape-bottom transform-left-down"></div>
+                                    <img class='img-fluid top-z-index ' src="./images/illustration-features-tab-3.svg" alt="" width="536" height="346">
+                                </div>
+                            </div>
                         </div>
                   </div>
             </section>
-            <section class="row mt-4">
+            <section class="row">
                 Download the extension
 
                 We’ve got more browsers in the pipeline. Please do let us know if you’ve 

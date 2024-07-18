@@ -59,22 +59,39 @@ body {
 .show{
     display:block;
 }
-.shape{
-  width:70%;
-  height: 50%;
-  position:absolute;
-  @include bg-color(map-get($colors,Soft Blue),nth($fallback-colors,1));
-  border-radius: 100px;
+.relativeouter{
+  position: relative;
 }
-.shape:before{
+
+
+.shape-top{
+    width: 120%;
+    height: 70%;
+    position:absolute;
+    @include bg-color(map-get($colors,Soft Blue),nth($fallback-colors,1));
+    border-radius: 100px;
+    @media screen and(min-width:768px){
+      width:70%;
+      height: 70%;
+    }
+}
+.shape-bottom{
+    width: 70%;
+    height:40%;
+    position:absolute;
+    @include bg-color(map-get($colors,Soft Blue),nth($fallback-colors,1));
+    border-radius: 100px;
+    @media screen and(min-width:768px){
+      width:30%;
+      height: 20%;
+    }
+}
+.shape-top:before,.shape-bottom:before{
   content: "";
   display: block;
   padding-top: 25%;
 }
-.transform-right-down{
-   top: 50%;
-   left: 55%;
-}
+
 .top-z-index{
   //needed for z-index.
   position: relative;
@@ -82,16 +99,15 @@ body {
   opacity:1;
 }
 #container{
-      width: 90%;
-      max-width: 1400px;
       @include margin(0 auto);
+      //cutoff the blue shape on the right/left side
       overflow:hidden;
       header,main,footer{
           max-width: 768px;
-          
           @include margin(0 auto);
           @include padding(1em);
           @include bg-color(map-get($colors,White),nth($fallback-colors,5));
+          overflow:hidden;
           @media screen and(min-width: 768px){
               @include padding(4em);
               max-width: 1400px;
@@ -104,8 +120,25 @@ body {
       .container{
         
         &__firstchild{
-            position:relative;
-            
+          .transform-right-down{
+            top: 25%;
+            left: 55%;
+            @media screen and(min-width: 768px){
+              top: 35%;
+              left: 55%;
+            }
+          }
+        &__secondchild{
+          .transform-left-down{
+            top: 25%;
+            right: 55%;
+            @media screen and(min-width: 768px){
+              top: 45%;
+              right: 85%;
+            }
+          }
+          
+        }   
 
         }
         @media screen and(min-width: 768px){

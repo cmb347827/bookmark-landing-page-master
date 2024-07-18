@@ -19,22 +19,37 @@ body {
 .show {
   display: block; }
 
-.shape {
-  width: 70%;
-  height: 50%;
+.relativeouter {
+  position: relative; }
+
+.shape-top {
+  width: 120%;
+  height: 70%;
   position: absolute;
   background-color: "Absolute Zero";
   background-color: #5368df;
   border-radius: 100px; }
+  @media screen and (min-width: 768px) {
+    .shape-top {
+      width: 70%;
+      height: 70%; } }
 
-.shape:before {
+.shape-bottom {
+  width: 70%;
+  height: 40%;
+  position: absolute;
+  background-color: "Absolute Zero";
+  background-color: #5368df;
+  border-radius: 100px; }
+  @media screen and (min-width: 768px) {
+    .shape-bottom {
+      width: 30%;
+      height: 20%; } }
+
+.shape-top:before, .shape-bottom:before {
   content: "";
   display: block;
   padding-top: 25%; }
-
-.transform-right-down {
-  top: 50%;
-  left: 55%; }
 
 .top-z-index {
   position: relative;
@@ -42,8 +57,6 @@ body {
   opacity: 1; }
 
 #container {
-  width: 90%;
-  max-width: 1400px;
   margin: 0 auto;
   overflow: hidden; }
   #container header, #container main, #container footer {
@@ -51,13 +64,26 @@ body {
     margin: 0 auto;
     padding: 1em;
     background-color: Snow;
-    background-color: white; }
+    background-color: white;
+    overflow: hidden; }
     @media screen and (min-width: 768px) {
       #container header, #container main, #container footer {
         padding: 4em;
         max-width: 1400px; } }
-  #container .container__firstchild {
-    position: relative; }
+  #container .container__firstchild .transform-right-down {
+    top: 25%;
+    left: 55%; }
+    @media screen and (min-width: 768px) {
+      #container .container__firstchild .transform-right-down {
+        top: 35%;
+        left: 55%; } }
+  #container .container__firstchild__secondchild .transform-left-down {
+    top: 25%;
+    right: 55%; }
+    @media screen and (min-width: 768px) {
+      #container .container__firstchild__secondchild .transform-left-down {
+        top: 45%;
+        right: 85%; } }
   @media screen and (min-width: 768px) {
     #container .container {
       margin-top: 5%; } }
