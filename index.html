@@ -50,13 +50,13 @@
             </section>
             
             <section class="row container__secondchild d-flex flex-column align-items-center">
-                <div class=" text-center mt-4">
+                <div class="col text-center mb-4">
                     <h2>Features</h2>
 
                     <p>Our aim is to make it quick and easy for you to access your favourite websites. 
                     Your bookmarks sync between your devices so you can access them on the go.</p>
                 </div>
-                <ul class="nav nav-underline mb-3 d-flex flex-md-row flex-column align-items-center" role="tablist">
+                <ul class="col nav nav-underline mb-3 d-flex flex-md-row flex-column align-items-center " role="tablist">
                     <li class="nav-item" role="presentation">
                       <button class="nav-link active" aria-current="page" id="underline-bookmark-tab" data-bs-toggle="pill" data-bs-target="#underline-bookmark" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Simple Bookmarking</button>
                     </li>
@@ -66,8 +66,8 @@
                     <li class="nav-item" role="presentation">
                       <button class="nav-link" id="underline-share-tab" data-bs-toggle="pill" data-bs-target="#underline-share" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Data Sharing</button>
                     </li>
-                  </ul>
-                  <div class="tab-content" >
+                </ul>
+                <div class="col tab-content " >
                         <div class="tab-pane fade show active " id="underline-bookmark" role="tabpanel" aria-labelledby="underline-bookmark-tab" tabindex="0">
                             <div class="d-flex flex-md-row flex-column ">
                                 <div class="order-last ">
@@ -76,7 +76,7 @@
                                     gives you complete control over how you manage your favourite sites.</p>
                                     <button type='button'>More Info</button>
                                 </div>
-                                <div class="order-first ">
+                                <div class="order-first relativeouter">
                                     <div class="shape-bottom transform-left-down"></div>
                                     <img class='img-fluid top-z-index ' src="./images/illustration-features-tab-1.svg" alt="" width="536" height="346">
                                 </div>
@@ -104,79 +104,102 @@
                                     link that you can send at the click of a button.</p>
                                     <button type='button'>More Info</button>
                                 </div>
-                                <div class="col order-first ">
+                                <div class="order-first ">
                                     <div class="shape-bottom transform-left-down"></div>
                                     <img class='img-fluid top-z-index ' src="./images/illustration-features-tab-3.svg" alt="" width="536" height="346">
                                 </div>
                             </div>
                         </div>
-                  </div>
+                </div>
             </section>
-            <section class="row">
-                Download the extension
-
-                We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-                got a favourite you’d like us to prioritize.
-
-                Add to Chrome
-                Minimum version 62
-                Add & Install Extension
-
-                Add to Firefox
-                Minimum version 55
-                Add & Install Extension
-
-                Add to Opera
-                Minimum version 46
-                Add & Install Extension
+            <section class="row d-flex flex-column mt-4 container__thirdchild position-top">
+                <div class="col">
+                    <h3>Download the extension</h3>
+                    <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+                      got a favourite you’d like us to prioritize.</p>
+                </div>
+                <div class="col">
+                    <div class="d-flex flex-column flex-md-row">
+                        <div>
+                            <h4>Add to Chrome</h4>
+                            <p>Minimum version 62</p>
+                            <button type='button'>Add & Install Extension</button>
+                        </div>
+                        <div>
+                            <h4>Add to Firefox</h4>
+                            <p>Minimum version 55</p>
+                            <button type="button">Add & Install Extension</button>
+                        </div>
+                        <div>
+                            <h4>Add to Opera</h4>
+                            <p>Minimum version 46</p>
+                            <button type='button'>Add & Install Extension</button>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="row">
-                Frequently Asked Questions
-                
-                Here are some of our FAQs. If you have any other questions you’d like 
-                answered please feel free to email us.
+            <section class="row d-flex flex-column container__fourthchild position-top">
+                <div class="col">
+                    <h4>Frequently Asked Questions</h4>
+                    
+                    <p>Here are some of our FAQs. If you have any other questions you’d like 
+                    answered please feel free to email us.</p>
+                </div>
+                <div class="accordion col" id="questionsaccordion">
+                    <div class="accordion-item">
+                        <!-- Question 1 -->
+                        <h5 class="accordion-header"><button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#question1">What is bookmark?</button></h5>	
 
-                <!-- Question 1 -->
-                What is Bookmark?
+                        <!-- Answer 1 -->
+                    
+                        <p id='question1' class="accordion-collapse collapse" data-bs-parent="#questionsaccordion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+                        justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+                    </div>
+                    <div class="accordion-item">
+                        <!-- Question 2 -->
+                        <h5 class="accordion-header"><button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#question2">How can I request a new brouwser?</button></h5>
 
-                <!-- Answer 1 -->
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-                justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+                        <!-- Answer 2 -->
+                        <p id="question2" class="accordion-collapse collapse show" data-bs-parent="#questionsaccordion">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+                        Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+                        ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+                        Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+                    </div>
+                    <div class="accordion-item">
+                        <!-- Question 3 -->
+                        <h5 class="accordion-header"><button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#question3">is there a mobile app?</button></h5>
 
-                <!-- Question 2 -->
-                How can I request a new browser?
+                        <!-- Answer 3 -->
+                        <p id="question3" class="accordion-collapse collapse" data-bs-parent="#questionsaccordion">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+                        urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+                        sollicitudin ex et ultricies bibendum.</p>
+                    </div>
+                    <div class="accordion-item">
+                        <!-- Question 4 -->
+                        <h5 class="accordion-header"><button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#question4">About other Chromium browsers?</button></h5>
 
-                <!-- Answer 2 -->
-                Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-                Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-                ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-                Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-
-                <!-- Question 3 -->
-                Is there a mobile app?
-
-                <!-- Answer 3 -->
-                Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-                urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-                sollicitudin ex et ultricies bibendum.
-
-                <!-- Question 4 -->
-                What about other Chromium browsers?
-
-                <!-- Answer 4 -->
-                Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-                vitae neque eget nisl gravida pellentesque non ut velit.
-
-                More Info
+                        <!-- Answer 4 -->
+                        <p id="question4" class="accordion-collapse collapse" data-bs-parent="#questionsaccordion">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+                        vitae neque eget nisl gravida pellentesque non ut velit.</p>
+                    </div>
+                </div>
             </section>
-            <section class="row">
-                35,000+ already joined
+            <button class='position-top' id='center-button' type="button">More info</button>
+            <section class="row d-flex flex-column container__fifthchild position-top">
+                <div class="col text-center">
+                    <p>35,000+ already joined</p>
 
-                Stay up-to-date with what we’re doing
-
-                <button type="submit">Contact Us</button>
+                    <p>Stay up-to-date with what we’re doing</p>
+                </div>
+                <form class='col d-flex flex-column flex-md-row ' method="post" action="#">
+                    <label class='visually-hidden' for="email">Enter your email</label>
+                    <div class="center-div">
+                        <input type="email" id="email">
+                        <button type="submit">Contact Us</button>
+                    </div>
+                </form>
             </section>
-            <nav>
+            <nav class="container__sixthchild position-top">
                 Features
                 Pricing
                 Contact

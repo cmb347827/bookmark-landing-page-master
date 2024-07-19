@@ -68,7 +68,7 @@ body {
     width: 120%;
     height: 70%;
     position:absolute;
-    @include bg-color(map-get($colors,Soft Blue),nth($fallback-colors,1));
+    @include bg-color(map-get($colors,Soft Blue),nth($fallback-colors,1));     //use extend
     border-radius: 100px;
     @media screen and(min-width:768px){
       width:70%;
@@ -79,11 +79,11 @@ body {
     width: 70%;
     height:40%;
     position:absolute;
-    @include bg-color(map-get($colors,Soft Blue),nth($fallback-colors,1));
+    @include bg-color(map-get($colors,Soft Blue),nth($fallback-colors,1));     //use extend
     border-radius: 100px;
     @media screen and(min-width:768px){
-      width:30%;
-      height: 20%;
+      width:70%;
+      height: 70%;
     }
 }
 .shape-top:before,.shape-bottom:before{
@@ -97,6 +97,10 @@ body {
   position: relative;
   z-index: 1;
   opacity:1;
+}
+.position-top{      //add to html or extend
+  position:relative;
+  top: 10em;
 }
 #container{
       @include margin(0 auto);
@@ -128,18 +132,30 @@ body {
               left: 55%;
             }
           }
+        }
         &__secondchild{
           .transform-left-down{
             top: 25%;
             right: 55%;
             @media screen and(min-width: 768px){
-              top: 45%;
-              right: 85%;
+              top: 75%;
+              right: 65%;
             }
           }
-          
+        }
+        &__thirdchild{
+           
         }   
-
+        #center-button{
+           display:block;
+           @include margin(0 auto);
+        }
+        &__fifthchild{
+          @include bg-color(map-get($colors,Soft Blue),nth($fallback-colors,1));
+          .center-div{
+            display:block;
+            @include margin(0 auto);
+          }
         }
         @media screen and(min-width: 768px){
           margin-top: 5%;
