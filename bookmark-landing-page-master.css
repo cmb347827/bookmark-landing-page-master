@@ -22,31 +22,19 @@ body {
 .relativeouter {
   position: relative; }
 
-.shape-top {
-  width: 120%;
-  height: 70%;
+.shape {
+  width: 50%;
+  height: 50%;
   position: absolute;
   background-color: "Absolute Zero";
   background-color: #5368df;
   border-radius: 100px; }
   @media screen and (min-width: 768px) {
-    .shape-top {
+    .shape {
       width: 70%;
       height: 70%; } }
 
-.shape-bottom {
-  width: 70%;
-  height: 40%;
-  position: absolute;
-  background-color: "Absolute Zero";
-  background-color: #5368df;
-  border-radius: 100px; }
-  @media screen and (min-width: 768px) {
-    .shape-bottom {
-      width: 70%;
-      height: 70%; } }
-
-.shape-top:before, .shape-bottom:before {
+.shape:before {
   content: "";
   display: block;
   padding-top: 25%; }
@@ -56,13 +44,11 @@ body {
   z-index: 1;
   opacity: 1; }
 
-.position-top {
-  position: relative;
-  top: 10em; }
-
 #container {
   margin: 0 auto;
   overflow: hidden; }
+  #container section {
+    margin-top: 10em; }
   #container header, #container main, #container footer {
     max-width: 768px;
     margin: 0 auto;
@@ -86,8 +72,10 @@ body {
     right: 55%; }
     @media screen and (min-width: 768px) {
       #container .container__secondchild .transform-left-down {
-        top: 75%;
-        right: 65%; } }
+        top: 50%;
+        right: 35%; } }
+  #container .container__thirdchild {
+    margin-top: 100px; }
   #container .container #center-button {
     display: block;
     margin: 0 auto; }

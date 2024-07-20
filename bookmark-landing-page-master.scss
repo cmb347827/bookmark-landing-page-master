@@ -64,9 +64,9 @@ body {
 }
 
 
-.shape-top{
-    width: 120%;
-    height: 70%;
+.shape{
+    width: 50%;
+    height: 50%;
     position:absolute;
     @include bg-color(map-get($colors,Soft Blue),nth($fallback-colors,1));     //use extend
     border-radius: 100px;
@@ -75,18 +75,7 @@ body {
       height: 70%;
     }
 }
-.shape-bottom{
-    width: 70%;
-    height:40%;
-    position:absolute;
-    @include bg-color(map-get($colors,Soft Blue),nth($fallback-colors,1));     //use extend
-    border-radius: 100px;
-    @media screen and(min-width:768px){
-      width:70%;
-      height: 70%;
-    }
-}
-.shape-top:before,.shape-bottom:before{
+.shape:before{
   content: "";
   display: block;
   padding-top: 25%;
@@ -98,14 +87,14 @@ body {
   z-index: 1;
   opacity:1;
 }
-.position-top{      //add to html or extend
-  position:relative;
-  top: 10em;
-}
+
 #container{
       @include margin(0 auto);
       //cutoff the blue shape on the right/left side
       overflow:hidden;
+      section{
+        margin-top: 10em;
+      }
       header,main,footer{
           max-width: 768px;
           @include margin(0 auto);
@@ -138,13 +127,13 @@ body {
             top: 25%;
             right: 55%;
             @media screen and(min-width: 768px){
-              top: 75%;
-              right: 65%;
+              top: 50%;
+              right: 35%;
             }
           }
         }
         &__thirdchild{
-           
+           margin-top: 100px;
         }   
         #center-button{
            display:block;
