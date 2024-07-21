@@ -135,6 +135,14 @@ body {
         }
         &__thirdchild{
            margin-top: 10em;
+           @media screen and(min-width:768px){
+              .padding-top-3em{
+                  padding-top:3em;
+              }
+              .padding-top-6em{
+                  padding-top:6em;
+              }
+           }
         }   
         #center-button{
            display:block;
