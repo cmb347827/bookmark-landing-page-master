@@ -55,6 +55,25 @@ Users should be able to:
   - for the responsive pill shaped blue background , I had to use padding and :before(see link) 
     and % for the size/position(see another link)
   - back to using BEM naming
+  - I had different html (see below), for the tabs first , with an added div for the d-flex and without the inner row/col as in the top shape divs, so it didn't have the same widths and I could not understand why not. 
+  ```
+     <div class="col tab-content " >
+                        <div class="tab-pane fade show active " id="underline-bookmark" role="tabpanel" aria-labelledby="underline-bookmark-tab" tabindex="0">
+                            <div class="d-flex flex-md-row flex-column ">
+                                <div class="order-last ">
+                                    <h3>Bookmark in one click</h3>
+                                    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                                    gives you complete control over how you manage your favourite sites.</p>
+                                    <button type='button'>More Info</button>
+                                </div>
+                                <div class="order-first relativeouter ">
+                                    <div class="shape transform-left-down"></div>
+                                    <img class='img-fluid top-z-index ' src="./images/illustration-features-tab-1.svg" alt="" width="536" height="346">
+                                </div>
+                            </div>
+                        </div>
+      </div>
+  ```
 
 
 ### Continued development

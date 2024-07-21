@@ -23,16 +23,16 @@ body {
   position: relative; }
 
 .shape {
-  width: 50%;
-  height: 50%;
+  width: 70%;
+  height: 70%;
   position: absolute;
   background-color: "Absolute Zero";
   background-color: #5368df;
   border-radius: 100px; }
   @media screen and (min-width: 768px) {
     .shape {
-      width: 70%;
-      height: 70%; } }
+      width: 80%;
+      height: 80%; } }
 
 .shape:before {
   content: "";
@@ -60,22 +60,24 @@ body {
       #container header, #container main, #container footer {
         padding: 4em;
         max-width: 1400px; } }
-  #container .container__firstchild .transform-right-down {
-    top: 25%;
-    left: 55%; }
-    @media screen and (min-width: 768px) {
-      #container .container__firstchild .transform-right-down {
-        top: 35%;
-        left: 55%; } }
+  #container .container__firstchild {
+    margin-top: 10em; }
+    #container .container__firstchild .transform-right-down {
+      top: 25%;
+      left: 55%; }
+      @media screen and (min-width: 768px) {
+        #container .container__firstchild .transform-right-down {
+          top: 35%;
+          left: 55%; } }
   #container .container__secondchild .transform-left-down {
-    top: 25%;
+    top: 45%;
     right: 55%; }
     @media screen and (min-width: 768px) {
       #container .container__secondchild .transform-left-down {
         top: 50%;
-        right: 35%; } }
+        right: 65%; } }
   #container .container__thirdchild {
-    margin-top: 100px; }
+    margin-top: 10em; }
   #container .container #center-button {
     display: block;
     margin: 0 auto; }

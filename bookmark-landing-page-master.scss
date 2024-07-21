@@ -65,14 +65,14 @@ body {
 
 
 .shape{
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
     position:absolute;
     @include bg-color(map-get($colors,Soft Blue),nth($fallback-colors,1));     //use extend
     border-radius: 100px;
     @media screen and(min-width:768px){
-      width:70%;
-      height: 70%;
+      width:80%;
+      height: 80%;
     }
 }
 .shape:before{
@@ -121,19 +121,20 @@ body {
               left: 55%;
             }
           }
+          margin-top: 10em;
         }
         &__secondchild{
           .transform-left-down{
-            top: 25%;
+            top: 45%;
             right: 55%;
             @media screen and(min-width: 768px){
               top: 50%;
-              right: 35%;
+              right: 65%;
             }
           }
         }
         &__thirdchild{
-           margin-top: 100px;
+           margin-top: 10em;
         }   
         #center-button{
            display:block;
