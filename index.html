@@ -16,7 +16,7 @@
     <div id="container">
         <header class="d-flex">
             <img src="./images/logo-bookmark.svg" alt='' width="148" height="25" >
-            <nav aria-labelledby='navbarCollapse'id='nav' class="container-fluid navbar navbar-expand-md d-md-flex align-items-start justify-content-end ">
+            <nav aria-labelledby='navbarCollapse' id='nav' class="container-fluid navbar navbar-expand-md d-md-flex align-items-start justify-content-end ">
                   <button aria-label='Menu' id='menubutton' type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span id='open' class="navbar-toggler-icon navbar-light"></span>
                     <img  id='close' class='hidden' src='./images/icon-close.svg' alt='Close menu.' width="32" height="32">
@@ -58,13 +58,13 @@
                 </div>
                 <ul class="col nav nav-underline mb-3 d-flex flex-md-row flex-column align-items-center " role="tablist">
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link active" aria-current="page" id="underline-bookmark-tab" data-bs-toggle="pill" data-bs-target="#underline-bookmark" type="button" role="tab" aria-controls="underline-home" aria-selected="true">Simple Bookmarking</button>
+                      <button class="nav-link active" aria-current="page" id="underline-bookmark-tab" data-bs-toggle="pill" data-bs-target="#underline-bookmark" type="button" role="tab" aria-controls="underline-bookmark" aria-selected="true">Simple Bookmarking</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="underline-search-tab" data-bs-toggle="pill" data-bs-target="#underline-search" type="button" role="tab" aria-controls="underline-profile" aria-selected="false">Speedy Searching</button>
+                      <button class="nav-link" id="underline-search-tab" data-bs-toggle="pill" data-bs-target="#underline-search" type="button" role="tab" aria-controls="underline-search" aria-selected="false">Speedy Searching</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="underline-share-tab" data-bs-toggle="pill" data-bs-target="#underline-share" type="button" role="tab" aria-controls="underline-contact" aria-selected="false">Data Sharing</button>
+                      <button class="nav-link" id="underline-share-tab" data-bs-toggle="pill" data-bs-target="#underline-share" type="button" role="tab" aria-controls="underline-share" aria-selected="false">Data Sharing</button>
                     </li>
                 </ul>
                 <div class="col tab-content " >
@@ -191,7 +191,7 @@
             <button class='' id='center-button' type="button">More info</button>
             <section class="row d-flex flex-column container__fifthchild ">
                 <div class="col text-center">
-                    <p>35,000+ already joined</p>
+                    <h4>35,000+ already joined</h4>
 
                     <p>Stay up-to-date with what we’re doing</p>
                 </div>
@@ -203,10 +203,12 @@
                     </div>
                 </form>
             </section>
-            <nav class="container__sixthchild ">
-                Features
-                Pricing
-                Contact
+            <nav aria-label='Secondary navigation' class="container__sixthchild ">
+                <ul>
+                    <li><a href='#'>Features</a></li>
+                    <li><a href='#'>Pricing</a></li>
+                    <li><a href='#'>Contact</a></li>
+                </ul>
             </nav>
         </main>
         <footer class="">
