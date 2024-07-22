@@ -95,6 +95,9 @@ body {
       section{
         margin-top: 10em;
       }
+      button[disabled],button[aria-disabled=true]{
+          opacity:0.5;
+      }
       header,main,footer{
           max-width: 768px;
           @include margin(0 auto);
@@ -154,6 +157,7 @@ body {
             display:block;
             @include margin(0 auto);
           }
+      
         }
         @media screen and(min-width: 768px){
           margin-top: 5%;

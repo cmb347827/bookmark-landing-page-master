@@ -11,9 +11,8 @@ const data ={
 	timeOutVal:3000,
 	email: document.getElementById('email'),
 	subscribe: document.getElementById('contact'),
+	feedback: document.querySelector('.invalid-feedback'),
 }
-
-
 
 $(window).on('load',function(){
 		
@@ -28,10 +27,18 @@ $(window).on('load',function(){
 		
     });
 	 
-	$('data.subscribe').on('click',function(){
-		$('.invalid-feedback').css('display','block');
+	$(data.subscribe).on('click',function(){
+		$(data.feedback).css('display','block');
+		data.subscribe.setAttribute('aria-disabled','true');
+		data.subscribe.setAttribute('disabled','true');
 	});
     //User has pressed the keyboard ,and entered some data in the input field
     data.email.addEventListener('keyup',keyUp);
     data.email.addEventListener('keypress',keyPress);
+
+    data.subscribe.addEventListener('click',(e)=>{
+        e.preventDefault();
+		console.log('wo');
+		keyPress(e);
+	})
 });

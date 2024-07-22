@@ -49,6 +49,8 @@ body {
   overflow: hidden; }
   #container section {
     margin-top: 10em; }
+  #container button[disabled], #container button[aria-disabled=true] {
+    opacity: 0.5; }
   #container header, #container main, #container footer {
     max-width: 768px;
     margin: 0 auto;

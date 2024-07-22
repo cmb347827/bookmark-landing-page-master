@@ -7,30 +7,34 @@ function validateEmail(email){
     const check = regex.test(val);
 	return check;
 }
+//const validateEmail(email)=>
+
 const keyUp = (event)=>{
-	//The user may be done typing the email address , check to see if it's valid before enabling submit button
+		//The user may be done typing the email address , check to see if it's valid before enabling submit button
 	window.clearTimeout(data.timer); // prevent errant multiple timeouts from being generated
-    data.timer = window.setTimeout(() => {
-       data.check = validateEmail(data.email.value);
-	   console.log('in keyup',data.email.value, ' data check',data.check);
-	   //on check is true(valid email), enablebutton.
-	   if(data.check){
-		 //data.subscribe);
-		 $('.invalid-feedback').css('display','none');
-		 
-	   }else{
-		  //disableButton(data.subscribe);
-		 $('.invalid-feedback').css('display','block');
-	   }
-    }, data.timeOutVal);
+	data.timer = window.setTimeout(() => {
+		data.check = validateEmail(data.email.value);
+		console.log('in keyup',data.email.value, ' data check',data.check);
+		//on check is true(valid email), enablebutton.
+		if(data.check){
+			$('data.feedback').css({'display':'none'});
+			data.subscribe.setAttribute('aria-disabled','false');
+			data.subscribe.setAttribute('disabled','false');
+			
+		}else{
+			$('data.feedback').css('display','block');
+			data.subscribe.setAttribute('aria-disabled','true');
+			data.subscribe.setAttribute('disabled','true');
+		}
+	}, data.timeOutVal);
 }
 const keyPress =(event)=>{
 	//The user may accidently delete part of the email after typing it, prevent submit even after button enabled
 	window.clearTimeout(data.timer); // prevent errant multiple timeouts from being generated
 	data.check = validateEmail(data.email.value);
 	if(data.check){
-	   $('.invalid-feedback').css('display','none');
-	}else{
-	   //disableButton(data.subscribe);
+		$('data.feedback').css('display','none');
+		data.subscribe.setAttribute('aria-disabled','false');
+		data.subscribe.setAttribute('disabled','false');
 	}
 }
