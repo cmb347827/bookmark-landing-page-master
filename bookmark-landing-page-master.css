@@ -98,6 +98,12 @@ body {
   #container .container__sixthchild {
     background-color: NavyBlue;
     background-color: #252b46; }
+    #container .container__sixthchild svg path {
+      filter: brightness(0) saturate(100%) invert(93%) sepia(0%) saturate(880%) hue-rotate(150deg) brightness(102%) contrast(104%); }
+    #container .container__sixthchild a {
+      color: Snow;
+      color: white;
+      text-decoration: none; }
   @media screen and (min-width: 768px) {
     #container .container {
       margin-top: 5%; } }

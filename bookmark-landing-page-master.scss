@@ -160,6 +160,13 @@ body {
         }
         &__sixthchild{
           @include bg-color(map-get($colors,Very Dark Blue),nth($fallback-colors,4));
+          svg path{
+            filter:brightness(0) saturate(100%) invert(93%) sepia(0%) saturate(880%) hue-rotate(150deg) brightness(102%) contrast(104%);
+          }
+          a{
+            @include font-color(map-get($colors,White),nth($fallback-colors,5));
+            text-decoration:none;
+          }
         }
         @media screen and(min-width: 768px){
           margin-top: 5%;
