@@ -9,6 +9,7 @@ const data ={
 	check:'',
 	timer:'',
 	timeOutVal:3000,
+	regex : /^\w+@\w+\.{1}(com|net){1}$/,
 	email: document.getElementById('email'),
 	subscribe: document.getElementById('contact'),
 	feedback: document.querySelector('.invalid-feedback'),
@@ -28,9 +29,7 @@ $(window).on('load',function(){
     });
 	 
 	$(data.subscribe).on('click',function(){
-		$(data.feedback).css('display','block');
-		data.subscribe.setAttribute('aria-disabled','true');
-		data.subscribe.setAttribute('disabled','true');
+		dataFailed();
 	});
     //User has pressed the keyboard ,and entered some data in the input field
     data.email.addEventListener('keyup',keyUp);
@@ -38,7 +37,6 @@ $(window).on('load',function(){
 
     data.subscribe.addEventListener('click',(e)=>{
         e.preventDefault();
-		console.log('wo');
 		keyPress(e);
 	})
 });

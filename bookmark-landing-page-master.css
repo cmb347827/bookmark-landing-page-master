@@ -51,6 +51,9 @@ body {
     margin-top: 10em; }
   #container button[disabled], #container button[aria-disabled=true] {
     opacity: 0.5; }
+  #container .red-bg {
+    background-color: "Alizarin crimson";
+    background-color: #fa5757; }
   #container header, #container main, #container footer {
     max-width: 768px;
     margin: 0 auto;
@@ -91,9 +94,6 @@ body {
   #container .container__fifthchild {
     background-color: "Absolute Zero";
     background-color: #5368df; }
-    #container .container__fifthchild .center-div {
-      display: block;
-      margin: 0 auto; }
   @media screen and (min-width: 768px) {
     #container .container {
       margin-top: 5%; } }

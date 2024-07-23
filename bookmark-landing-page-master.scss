@@ -98,6 +98,9 @@ body {
       button[disabled],button[aria-disabled=true]{
           opacity:0.5;
       }
+      .red-bg{
+        @include bg-color(map-get($colors,Soft Red),nth($fallback-colors,2));
+      }
       header,main,footer{
           max-width: 768px;
           @include margin(0 auto);
@@ -153,10 +156,6 @@ body {
         }
         &__fifthchild{
           @include bg-color(map-get($colors,Soft Blue),nth($fallback-colors,1));
-          .center-div{
-            display:block;
-            @include margin(0 auto);
-          }
       
         }
         @media screen and(min-width: 768px){
