@@ -93,7 +93,11 @@ body {
     margin: 0 auto; }
   #container .container__fifthchild {
     background-color: "Absolute Zero";
-    background-color: #5368df; }
+    background-color: #5368df;
+    min-height: 10em; }
+  #container .container__sixthchild {
+    background-color: NavyBlue;
+    background-color: #252b46; }
   @media screen and (min-width: 768px) {
     #container .container {
       margin-top: 5%; } }
