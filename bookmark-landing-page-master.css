@@ -54,6 +54,15 @@ body {
   #container .red-bg {
     background-color: "Alizarin crimson";
     background-color: #fa5757; }
+  #container .red-font-hover:hover {
+    color: "Alizarin crimson";
+    color: #fa5757; }
+  #container .error-button {
+    background-color: Snow;
+    background-color: white;
+    color: "Alizarin crimson";
+    color: #fa5757;
+    border: 2px solid red; }
   #container header, #container main, #container footer {
     max-width: 768px;
     margin: 0 auto;
@@ -91,6 +100,8 @@ body {
   #container .container #center-button {
     display: block;
     margin: 0 auto; }
+  #container .container__fourthchild .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23F02656'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important; }
   #container .container__fifthchild {
     color: Snow;
     color: white;
@@ -101,11 +112,18 @@ body {
       position: relative;
       left: 85%;
       bottom: 2em; }
+    #container .container__fifthchild input, #container .container__fifthchild button {
+      width: 100%;
+      max-width: 300px;
+      display: block;
+      margin: 0 auto; }
   #container .container__sixthchild {
     background-color: NavyBlue;
     background-color: #252b46; }
     #container .container__sixthchild svg path {
       filter: brightness(0) saturate(100%) invert(93%) sepia(0%) saturate(880%) hue-rotate(150deg) brightness(102%) contrast(104%); }
+    #container .container__sixthchild .svg-red-hover:hover {
+      filter: brightness(0) saturate(100%) invert(13%) sepia(100%) saturate(3865%) hue-rotate(348deg) brightness(112%) contrast(93%); }
     #container .container__sixthchild a {
       color: Snow;
       color: #ffd6d6;

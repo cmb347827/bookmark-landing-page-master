@@ -74,7 +74,7 @@ Users should be able to:
                         </div>
       </div>
   ```
-
+  - changed the color of the down arrow of the accordion (see stackoverflow post)
 
 ### Continued development
 
