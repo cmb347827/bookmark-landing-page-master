@@ -13,6 +13,7 @@ const data ={
 	email: document.getElementById('email'),
 	subscribe: document.getElementById('contact'),
 	feedback: document.querySelector('.invalid-feedback'),
+	erricon:document.getElementById('error-icon'),
 }
 
 $(window).on('load',function(){

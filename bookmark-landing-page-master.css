@@ -92,9 +92,15 @@ body {
     display: block;
     margin: 0 auto; }
   #container .container__fifthchild {
+    color: Snow;
+    color: white;
     background-color: "Absolute Zero";
     background-color: #5368df;
     min-height: 10em; }
+    #container .container__fifthchild .move-right-up {
+      position: relative;
+      left: 85%;
+      bottom: 2em; }
   #container .container__sixthchild {
     background-color: NavyBlue;
     background-color: #252b46; }
@@ -102,10 +108,15 @@ body {
       filter: brightness(0) saturate(100%) invert(93%) sepia(0%) saturate(880%) hue-rotate(150deg) brightness(102%) contrast(104%); }
     #container .container__sixthchild a {
       color: Snow;
-      color: white;
+      color: #ffd6d6;
       text-decoration: none; }
   @media screen and (min-width: 768px) {
     #container .container {
       margin-top: 5%; } }
+  #container footer .attribution {
+    display: block;
+    width: 20%;
+    padding: 0;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=bookmark-landing-page-master.css.map */

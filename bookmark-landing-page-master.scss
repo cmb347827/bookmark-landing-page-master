@@ -155,8 +155,14 @@ body {
            @include margin(0 auto);
         }
         &__fifthchild{
+          @include font-color(map-get($colors,White),nth($fallback-colors,5));
           @include bg-color(map-get($colors,Soft Blue),nth($fallback-colors,1));
           min-height: 10em;
+          .move-right-up{
+            position:relative;
+            left: 85%;
+            bottom: 2em;
+          }
         }
         &__sixthchild{
           @include bg-color(map-get($colors,Very Dark Blue),nth($fallback-colors,4));
@@ -164,7 +170,7 @@ body {
             filter:brightness(0) saturate(100%) invert(93%) sepia(0%) saturate(880%) hue-rotate(150deg) brightness(102%) contrast(104%);
           }
           a{
-            @include font-color(map-get($colors,White),nth($fallback-colors,5));
+            @include font-color(darken(map-get($colors,White),8),nth($fallback-colors,5));
             text-decoration:none;
           }
         }
@@ -173,6 +179,12 @@ body {
         }
       }
       footer{
-          
+        .attribution{
+          display:block;
+          width:20%;
+          padding:0;
+          @include margin(0 auto);
+
+        }
       }
 }

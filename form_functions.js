@@ -3,11 +3,13 @@ const validateEmail=(email)=> (data.regex).test(email.value);
 
 const dataPassed=()=>{
 	$(data.feedback).css({'display':'none'});
+	$(data.erricon).toggleClass('hidden');
 	data.subscribe.setAttribute('aria-disabled','false');
 	data.subscribe.disabled = false;
 }
 const dataFailed=()=>{
     $(data.feedback).css('display','block');
+	$(data.erricon).toggleClass('hidden');
 	data.subscribe.setAttribute('aria-disabled','true');
 	data.subscribe.setAttribute('disabled','');
 }
