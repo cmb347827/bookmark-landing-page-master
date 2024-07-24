@@ -98,6 +98,9 @@ body {
       button[disabled],button[aria-disabled=true]{
           opacity:0.5;
       }
+      .blue-bg{
+        @include bg-color(map-get($colors,Soft Blue),nth($fallback-colors,1));
+      }
       .red-bg{
         @include bg-color(map-get($colors,Soft Red),nth($fallback-colors,2));
       }
