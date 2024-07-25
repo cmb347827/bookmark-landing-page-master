@@ -98,6 +98,9 @@ body {
       button[disabled],button[aria-disabled=true]{
           opacity:0.5;
       }
+      button{
+        width: auto;
+      }
       .blue-bg{
         @include bg-color(map-get($colors,Soft Blue),nth($fallback-colors,1));
       }
@@ -130,7 +133,7 @@ body {
           
       }
       .container{
-        
+        margin-top: -5em;
         &__firstchild{
           .transform-right-down{
             top: 25%;
@@ -150,6 +153,12 @@ body {
               top: 50%;
               right: 65%;
             }
+          }
+          .top-margin{
+             margin-top: 10em;
+             @media screen and(min-width: 768px){
+                margin-top:0;
+             }
           }
         }
         &__thirdchild{
@@ -207,7 +216,7 @@ body {
           }
         }
         @media screen and(min-width: 768px){
-          margin-top: 5%;
+          margin-top: -15%;
         }
       }
       footer{
