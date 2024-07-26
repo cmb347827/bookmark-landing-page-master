@@ -89,7 +89,7 @@ body {
 }
 
 #container{
-      @include margin(0 auto);
+     @include margin(0 auto);
       //cutoff the blue shape on the right/left side
       overflow:hidden;
       section{
@@ -98,14 +98,11 @@ body {
       button[disabled],button[aria-disabled=true]{
           opacity:0.5;
       }
-      button{
-        width: auto;
-      }
-      .red-font-hover{
+      /*.red-font-hover{
          &:hover{
           @include font-color(map-get($colors,Soft Red),nth($fallback-colors,2));
          }
-      }
+      }*/
       
       header,main,footer{
           max-width: 768px;
@@ -118,10 +115,7 @@ body {
               max-width: 1400px;
           }
       }
-      header{
-          
-          
-      }
+      
       .container{
         margin-top: -5em;
         .btnHover{
@@ -171,6 +165,24 @@ body {
                 margin-top:0;
              }
           }
+          .custom-border{
+            border-bottom:none;
+            &.active{
+              border-bottom: 2px solid red;
+            }
+            &:hover{
+              border-bottom:none;
+            }
+          }
+          .custom-font{
+            @include font-color(lighten(map-get($colors,Grayish Blue),11),nth($fallback-colors,3));
+            &:hover{
+              @include font-color(map-get($colors,Soft Red),nth($fallback-colors,2));
+            }
+            &.active{
+              @include font-color(map-get($colors,Very Dark Blue),nth($fallback-colors,4));
+            }
+          }
         }
         &__thirdchild{
            margin-top: 10em;
@@ -191,6 +203,7 @@ body {
         #center-button{
            display:block;
            @include margin(0 auto);
+           width:auto;
         }
         &__fourthchild{
           .accordion-button:not(.collapsed)::after {
