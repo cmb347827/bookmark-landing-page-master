@@ -39,8 +39,8 @@
                     <p>A clean and simple interface to organize your favourite websites. Open a new 
                     browser tab and see your sites load instantly. Try it for free.</p>
                     <div class="d-flex">
-                        <button type='button'>Get it on Chrome</button>
-                        <button type='button'>Get it on Firefox</button>
+                        <button id='getonchromebtn' class='btn me-4 ' type='button'>Get it on Chrome</button>
+                        <button id='getonfirefoxbtn' class='btn' type='button'>Get it on Firefox</button>
                     </div>
                 </div>
                 <div class="col order-first order-md-last relativeouter">
@@ -70,11 +70,11 @@
                 <div class="col tab-content " >
                         <div class="row tab-pane fade show active " id="underline-bookmark" role="tabpanel" aria-labelledby="underline-bookmark-tab" tabindex="0">
                             <div class="col d-flex flex-column flex-md-row">
-                                <div class=" order-last top-margin ">
+                                <div class=" order-last ms-md-4 top-margin ">
                                     <h3>Bookmark in one click</h3>
                                     <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
                                     gives you complete control over how you manage your favourite sites.</p>
-                                    <button class='blue-bg' type='button'>More Info</button>
+                                    <button class='btn text-bg-primary' type='button'>More Info</button>
                                 </div>
                                 <div class=" order-first relativeouter ">
                                     <div class="shape transform-left-down"></div>
@@ -84,11 +84,11 @@
                         </div>
                         <div class="row tab-pane fade  " id="underline-search" role="tabpanel" aria-labelledby="underline-search-tab" tabindex="0">
                             <div class="col d-flex flex-column flex-md-row">
-                                <div class="order-last top-margin">
+                                <div class="order-last ms-md-4 top-margin">
                                     <h3>Intelligent search</h3>
                                     <p>Our powerful search feature will help you find saved sites in no time at all. 
                                         No need to trawl through all of your bookmarks.</p>
-                                    <button class='blue-bg' type="button"> More Info</button>
+                                    <button class='btn text-bg-primary' type="button"> More Info</button>
                                 </div>
                                 <div class="order-first relativeouter">
                                     <div class="shape transform-left-down"></div>
@@ -98,11 +98,11 @@
                         </div>
                         <div class="row tab-pane fade  " id="underline-share" role="tabpanel" aria-labelledby="underline-share-tab" tabindex="0">
                             <div class="col d-flex flex-column flex-md-row">
-                                <div class="order-last top-margin">
+                                <div class="order-last ms-md-4 top-margin">
                                     <h3>Share your bookmarks</h3>
                                     <p>Easily share your bookmarks and collections with others. Create a shareable 
                                     link that you can send at the click of a button.</p>
-                                    <button class='blue-bg' type='button'>More Info</button>
+                                    <button class='btn text-bg-primary' type='button'>More Info</button>
                                 </div>
                                 <div class="order-first relativeouter">
                                     <div class="shape transform-left-down"></div>
@@ -125,7 +125,7 @@
                             <div>
                                 <h4>Add to Chrome</h4>
                                 <p>Minimum version 62</p>
-                                <button class='blue-bg' type='button'>Add & Install Extension</button>
+                                <button class='btn text-bg-primary' type='button'>Add & Install Extension</button>
                             </div>
                         </div>
                         <div class='padding-top-3em'>
@@ -133,7 +133,7 @@
                             <div>
                                 <h4>Add to Firefox</h4>
                                 <p>Minimum version 55</p>
-                                <button class='blue-bg' type="button">Add & Install Extension</button>
+                                <button class='btn text-bg-primary' type="button">Add & Install Extension</button>
                             </div>
                         </div>
                         <div class="padding-top-6em">
@@ -141,7 +141,7 @@
                             <div>
                                 <h4>Add to Opera</h4>
                                 <p>Minimum version 46</p>
-                                <button class='blue-bg' type='button'>Add & Install Extension</button>
+                                <button class='btn text-bg-primary' type='button'>Add & Install Extension</button>
                             </div>
                         </div>
                     </div>
@@ -192,7 +192,7 @@
                         vitae neque eget nisl gravida pellentesque non ut velit.</p>
                     </div>
                 </div>
-                <button class='btn blue-bg' id='center-button' type="button">More info</button>
+                <button class='btn text-bg-primary' id='center-button' type="button">More info</button>
             </section>
             
             <section class="row d-flex flex-column container__fifthchild ">
@@ -205,14 +205,14 @@
                     <label class='visually-hidden' for="email">Enter your email</label>
                     <div class="d-flex flex-column flex-md-row justify-content-center">
                         <div class="d-flex flex-column">
-                            <input type="email" id="email">
+                            <input class="form-control" type="email" id="email">
                             <div>
                                <img class='move-right-up hidden' id='error-icon' src="./images/icon-error.svg" alt="" width="20" height="20">
-                               <div class="invalid-feedback text-white red-bg">Please enter a valid email address</div>
+                               <div class="invalid-feedback text-bg-danger">Please enter a valid email address</div>
                             </div>
                         </div>
                         <div>
-                           <button class='red-bg text-white' type="submit" id="contact">Contact Us</button>
+                           <button class='btn' type="submit" id="contact">Contact Us</button>
                         </div>
                     </div>
                 </form>

@@ -53,21 +53,9 @@ body {
     opacity: 0.5; }
   #container button {
     width: auto; }
-  #container .blue-bg {
-    background-color: "Absolute Zero";
-    background-color: #5368df; }
-  #container .red-bg {
-    background-color: "Alizarin crimson";
-    background-color: #fa5757; }
   #container .red-font-hover:hover {
     color: "Alizarin crimson";
     color: #fa5757; }
-  #container .error-button {
-    background-color: Snow;
-    background-color: white;
-    color: "Alizarin crimson";
-    color: #fa5757;
-    border: 2px solid red; }
   #container header, #container main, #container footer {
     max-width: 768px;
     margin: 0 auto;
@@ -90,6 +78,26 @@ body {
           #container .container__firstchild .transform-right-down {
             top: 35%;
             left: 55%; } }
+      #container .container__firstchild #getonchromebtn {
+        color: Snow;
+        color: white;
+        background-color: "Absolute Zero";
+        background-color: #5368df; }
+        #container .container__firstchild #getonchromebtn:hover {
+          background-color: CadetBlue4;
+          background-color: #e6e7ea;
+          color: "Absolute Zero";
+          color: #5368df;
+          border: 2px solid #5368df; }
+      #container .container__firstchild #getonfirefoxbtn {
+        background-color: CadetBlue4;
+        background-color: #e6e7ea;
+        color: NavyBlue;
+        color: #252b46;
+        box-shadow: 0 8px 8px -4px lightgrey; }
+        #container .container__firstchild #getonfirefoxbtn:hover {
+          box-shadow: none;
+          border: 2px solid #252b46; }
     #container .container__secondchild .transform-left-down {
       top: 45%;
       right: 55%; }
@@ -129,6 +137,17 @@ body {
         max-width: 300px;
         display: block;
         margin: 0 auto; }
+      #container .container__fifthchild #contact {
+        background-color: "Alizarin crimson";
+        background-color: #fa5757;
+        color: Snow;
+        color: white; }
+        #container .container__fifthchild #contact:hover {
+          background-color: Snow;
+          background-color: white;
+          color: "Alizarin crimson";
+          color: #fa5757;
+          border: 2px solid red; }
     #container .container__sixthchild {
       background-color: NavyBlue;
       background-color: #252b46; }
