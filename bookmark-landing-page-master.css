@@ -69,6 +69,12 @@ body {
         max-width: 1400px; } }
   #container .container {
     margin-top: -5em; }
+    #container .container .btnHover:hover, #container .container .container__firstchild #getonchromebtn:hover, #container .container__firstchild .container #getonchromebtn:hover, #container .container .container__thirdchild #addbtnChrome:hover, #container .container__thirdchild .container #addbtnChrome:hover, #container .container .container__thirdchild #addbtnFirefox:hover, #container .container__thirdchild .container #addbtnFirefox:hover, #container .container .container__thirdchild #addbtnOpera:hover, #container .container__thirdchild .container #addbtnOpera:hover {
+      background-color: CadetBlue4;
+      background-color: #e6e7ea;
+      color: "Absolute Zero";
+      color: #5368df;
+      border: 2px solid #5368df; }
     #container .container__firstchild {
       margin-top: 10em; }
       #container .container__firstchild .transform-right-down {
@@ -83,12 +89,6 @@ body {
         color: white;
         background-color: "Absolute Zero";
         background-color: #5368df; }
-        #container .container__firstchild #getonchromebtn:hover {
-          background-color: CadetBlue4;
-          background-color: #e6e7ea;
-          color: "Absolute Zero";
-          color: #5368df;
-          border: 2px solid #5368df; }
       #container .container__firstchild #getonfirefoxbtn {
         background-color: CadetBlue4;
         background-color: #e6e7ea;
@@ -117,6 +117,11 @@ body {
           padding-top: 3em; }
         #container .container__thirdchild .padding-top-6em {
           padding-top: 6em; } }
+      #container .container__thirdchild #addbtnChrome, #container .container__thirdchild #addbtnFirefox, #container .container__thirdchild #addbtnOpera {
+        color: Snow;
+        color: white;
+        background-color: "Absolute Zero";
+        background-color: #5368df; }
     #container .container #center-button {
       display: block;
       margin: 0 auto; }
