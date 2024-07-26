@@ -46,12 +46,7 @@ body {
 
 #container {
   margin: 0 auto;
-  overflow: hidden;
-  /*.red-font-hover{
-     &:hover{
-      @include font-color(map-get($colors,Soft Red),nth($fallback-colors,2));
-     }
-  }*/ }
+  overflow: hidden; }
   #container section {
     margin-top: 10em; }
   #container button[disabled], #container button[aria-disabled=true] {
@@ -116,13 +111,13 @@ body {
         border-bottom: 2px solid red; }
       #container .container__secondchild .custom-border:hover {
         border-bottom: none; }
-    #container .container__secondchild .custom-font {
+    #container .container__secondchild .custom-font-tabs {
       color: CadetBlue4;
       color: #afb1bb; }
-      #container .container__secondchild .custom-font:hover {
+      #container .container__secondchild .custom-font-tabs:hover {
         color: "Alizarin crimson";
         color: #fa5757; }
-      #container .container__secondchild .custom-font.active {
+      #container .container__secondchild .custom-font-tabs.active {
         color: NavyBlue;
         color: #252b46; }
     #container .container__thirdchild {
@@ -143,6 +138,12 @@ body {
       width: auto; }
     #container .container__fourthchild .accordion-button:not(.collapsed)::after {
       background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23F02656'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important; }
+    #container .container__fourthchild .custom-font-accordion {
+      color: NavyBlue;
+      color: #252b46; }
+      #container .container__fourthchild .custom-font-accordion:hover {
+        color: "Alizarin crimson";
+        color: #fa5757; }
     #container .container__fifthchild {
       color: Snow;
       color: white;
