@@ -98,7 +98,9 @@ body {
       button[disabled],button[aria-disabled=true]{
           opacity:0.5;
       }
-     
+      button:focus,a:focus{
+        border: 3px solid orange;
+      }
       
       header,main,footer{
           max-width: 768px;
@@ -245,11 +247,14 @@ body {
             //whiten the svg logo image text 
             filter:brightness(0) saturate(100%) invert(93%) sepia(0%) saturate(880%) hue-rotate(150deg) brightness(102%) contrast(104%);
           }
-          .svg-red-hover{
+          .red-hover{
             //on hover the social media logos will become red
             &:hover{
               filter:brightness(0) saturate(100%) invert(13%) sepia(100%) saturate(3865%) hue-rotate(348deg) brightness(112%) contrast(93%);
             }
+          }
+          li{
+            list-style:none;
           }
           a{
             @include font-color(darken(map-get($colors,White),8),nth($fallback-colors,5));

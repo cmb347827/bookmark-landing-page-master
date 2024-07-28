@@ -51,6 +51,8 @@ body {
     margin-top: 10em; }
   #container button[disabled], #container button[aria-disabled=true] {
     opacity: 0.5; }
+  #container button:focus, #container a:focus {
+    border: 3px solid orange; }
   #container header, #container main, #container footer {
     max-width: 768px;
     margin: 0 auto;
@@ -175,8 +177,10 @@ body {
       background-color: #252b46; }
       #container .container__sixthchild svg path {
         filter: brightness(0) saturate(100%) invert(93%) sepia(0%) saturate(880%) hue-rotate(150deg) brightness(102%) contrast(104%); }
-      #container .container__sixthchild .svg-red-hover:hover {
+      #container .container__sixthchild .red-hover:hover {
         filter: brightness(0) saturate(100%) invert(13%) sepia(100%) saturate(3865%) hue-rotate(348deg) brightness(112%) contrast(93%); }
+      #container .container__sixthchild li {
+        list-style: none; }
       #container .container__sixthchild a {
         color: Snow;
         color: #ffd6d6;
