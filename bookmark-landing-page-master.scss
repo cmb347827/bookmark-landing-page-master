@@ -211,6 +211,12 @@ body {
               @include bg-color(map-get($colors,Soft Blue),nth($fallback-colors,1));
               @extend .btnHover;
            }
+           .bottom-dash-border{
+              border-bottom: dashed lightgray;
+           }
+           .boxshadow-bottom{
+              box-shadow: 0 12px 11px 0 lightgray;
+           }
         }   
         #center-button{
            display:block;
