@@ -101,6 +101,12 @@ body {
       button:focus,a:focus{
         border: 3px solid orange;
       }
+      .red-hover{
+        //on hover the social media logos will become red
+        &:hover{
+          filter:brightness(0) saturate(100%) invert(13%) sepia(100%) saturate(3865%) hue-rotate(348deg) brightness(112%) contrast(93%);
+        }
+      }
       
       header,main,footer{
           max-width: 768px;
@@ -113,6 +119,13 @@ body {
               max-width: 1400px;
           }
       }
+      header{
+        .hoverBtn:hover{
+           @include bg-color(map-get($colors,White),nth($fallback-colors,5));
+           @include font-color(map-get($colors,Soft Red),nth($fallback-colors,2));
+           border: 2px solid red;
+        }
+      }
       
       .container{
         margin-top: -5em;
@@ -123,6 +136,7 @@ body {
               border: 2px solid map-get($colors,Soft Blue);
             }
         }
+        
         &__firstchild{
           .transform-right-down{
             top: 25%;
@@ -207,8 +221,9 @@ body {
           .accordion-button:not(.collapsed)::after {
               background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23F02656'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
           }
-          .custom-font-accordion{
+          .custom-accordion{
             @include font-color(map-get($colors,Very Dark Blue),nth($fallback-colors,4));
+            @include bg-color(map-get($colors,White),nth($fallback-colors,5));
             &:hover{
               @include font-color(map-get($colors,Soft Red),nth($fallback-colors,2));
              }
@@ -224,7 +239,7 @@ body {
             left: 85%;
             bottom: 2em;
           }
-          input,button{
+          input,button,.invalid-feedback{
              width: 100%;
              max-width: 300px;
              display:block;
@@ -239,7 +254,7 @@ body {
               border: 2px solid red;
             }
           }
-      
+          
         }
         &__sixthchild{
           @include bg-color(map-get($colors,Very Dark Blue),nth($fallback-colors,4));
@@ -247,12 +262,7 @@ body {
             //whiten the svg logo image text 
             filter:brightness(0) saturate(100%) invert(93%) sepia(0%) saturate(880%) hue-rotate(150deg) brightness(102%) contrast(104%);
           }
-          .red-hover{
-            //on hover the social media logos will become red
-            &:hover{
-              filter:brightness(0) saturate(100%) invert(13%) sepia(100%) saturate(3865%) hue-rotate(348deg) brightness(112%) contrast(93%);
-            }
-          }
+          
           li{
             list-style:none;
           }

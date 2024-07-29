@@ -53,6 +53,8 @@ body {
     opacity: 0.5; }
   #container button:focus, #container a:focus {
     border: 3px solid orange; }
+  #container .red-hover:hover {
+    filter: brightness(0) saturate(100%) invert(13%) sepia(100%) saturate(3865%) hue-rotate(348deg) brightness(112%) contrast(93%); }
   #container header, #container main, #container footer {
     max-width: 768px;
     margin: 0 auto;
@@ -64,6 +66,12 @@ body {
       #container header, #container main, #container footer {
         padding: 4em;
         max-width: 1400px; } }
+  #container header .hoverBtn:hover {
+    background-color: Snow;
+    background-color: white;
+    color: "Alizarin crimson";
+    color: #fa5757;
+    border: 2px solid red; }
   #container .container {
     margin-top: -5em; }
     #container .container .btnHover:hover, #container .container .container__firstchild #getonchromebtn:hover, #container .container__firstchild .container #getonchromebtn:hover, #container .container .container__thirdchild #addbtnChrome:hover, #container .container__thirdchild .container #addbtnChrome:hover, #container .container .container__thirdchild #addbtnFirefox:hover, #container .container__thirdchild .container #addbtnFirefox:hover, #container .container .container__thirdchild #addbtnOpera:hover, #container .container__thirdchild .container #addbtnOpera:hover {
@@ -140,10 +148,12 @@ body {
       width: auto; }
     #container .container__fourthchild .accordion-button:not(.collapsed)::after {
       background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23F02656'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important; }
-    #container .container__fourthchild .custom-font-accordion {
+    #container .container__fourthchild .custom-accordion {
       color: NavyBlue;
-      color: #252b46; }
-      #container .container__fourthchild .custom-font-accordion:hover {
+      color: #252b46;
+      background-color: Snow;
+      background-color: white; }
+      #container .container__fourthchild .custom-accordion:hover {
         color: "Alizarin crimson";
         color: #fa5757; }
     #container .container__fifthchild {
@@ -156,7 +166,7 @@ body {
         position: relative;
         left: 85%;
         bottom: 2em; }
-      #container .container__fifthchild input, #container .container__fifthchild button {
+      #container .container__fifthchild input, #container .container__fifthchild button, #container .container__fifthchild .invalid-feedback {
         width: 100%;
         max-width: 300px;
         display: block;
@@ -177,8 +187,6 @@ body {
       background-color: #252b46; }
       #container .container__sixthchild svg path {
         filter: brightness(0) saturate(100%) invert(93%) sepia(0%) saturate(880%) hue-rotate(150deg) brightness(102%) contrast(104%); }
-      #container .container__sixthchild .red-hover:hover {
-        filter: brightness(0) saturate(100%) invert(13%) sepia(100%) saturate(3865%) hue-rotate(348deg) brightness(112%) contrast(93%); }
       #container .container__sixthchild li {
         list-style: none; }
       #container .container__sixthchild a {

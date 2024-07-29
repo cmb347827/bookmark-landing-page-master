@@ -10,12 +10,12 @@ const dataPassed=()=>{
 const dataFailed=()=>{
     $(data.feedback).css('display','block');
 	$(data.erricon).toggleClass('hidden');
-	data.subscribe.setAttribute('aria-disabled','true');
-	data.subscribe.setAttribute('disabled','');
+	//data.subscribe.setAttribute('aria-disabled','true');   
+	//data.subscribe.setAttribute('disabled','');
 }
 
 const keyUp = (event)=>{
-		//The user may be done typing the email address , check to see if it's valid before enabling submit button
+	//The user may be done typing the email address , check to see if it's valid before enabling submit button
 	window.clearTimeout(data.timer); // prevent errant multiple timeouts from being generated
 	data.timer = window.setTimeout(() => {
 		data.check = validateEmail(data.email);
