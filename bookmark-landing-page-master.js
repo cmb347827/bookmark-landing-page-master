@@ -17,16 +17,24 @@ const data ={
 }
 
 $(window).on('load',function(){
-		
+	const width= window.innerWidth;
+	if(width<768){
+	   $('#mobilelogo').toggleClass('show');
+	}
+	if(width>=768){
+		$('#desktoplogo').toggleClass('show');
+	}
+
 	$("#navbarCollapse").on("show.bs.collapse", function(){
         //menu is collapsed, show close icon.
 		$('#open').toggleClass('hidden');
 		$('#close').toggleClass('show');
+		$('#nav').addClass('custom-nav');
     });
 	$("#navbarCollapse").on("hide.bs.collapse", function(){
         $('#close').toggleClass('show');
 		$('#open').toggleClass('hidden');
-		
+		$('#nav').removeClass('custom-nav');
     });
 	 
 	$(data.subscribe).on('click',function(){
