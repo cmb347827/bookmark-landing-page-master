@@ -58,7 +58,10 @@ body {
     color: Snow;
     color: white; }
   .custom-nav #mobilelogo {
-    filter: brightness(0) saturate(100%) invert(92%) sepia(3%) saturate(3990%) hue-rotate(191deg) brightness(106%) contrast(105%); }
+    filter: brightness(0) saturate(100%) invert(92%) sepia(3%) saturate(3990%) hue-rotate(191deg) brightness(106%) contrast(105%);
+    margin-left: 3em; }
+  .custom-nav #menubutton {
+    margin-right: 3em; }
 
 #container {
   margin: 0 auto;
@@ -82,35 +85,38 @@ body {
       #container header, #container main, #container footer {
         padding: 4em;
         max-width: 1400px; } }
-  #container header .hoverBtn:hover {
-    background-color: Snow;
-    background-color: white;
-    color: "Alizarin crimson";
-    color: #fa5757;
-    border: 2px solid red; }
   #container header #close {
     filter: brightness(0) saturate(100%) invert(92%) sepia(3%) saturate(3990%) hue-rotate(191deg) brightness(106%) contrast(105%); }
-  #container header nav {
-    padding: 4em 2em 0 2em; }
-  #container header #navbarCollapse button {
-    width: 80%; }
-  #container header #navbarCollapse li {
-    width: 80%;
-    text-align: center; }
-    #container header #navbarCollapse li a {
-      border-bottom: 1px solid white; }
-  #container header #navbarCollapse li a, #container header #navbarCollapse button {
-    font-size: 2.5rem;
-    padding: 0.2em; }
-  #container header #navbarCollapse #mobilemedia {
-    position: relative;
-    top: 1em; }
-  @media screen and (max-width: 767px) {
-    #container header #header-login {
-      background-color: transparent;
-      color: Snow;
-      color: white;
-      border: 4px solid white; } }
+  #container header #navbarCollapse {
+    width: 90%; }
+    #container header #navbarCollapse li {
+      width: 80%;
+      text-align: center;
+      padding: 0.2em; }
+      #container header #navbarCollapse li a {
+        font-size: 2rem;
+        border-bottom: 1px solid white; }
+      @media screen and (min-width: 768px) {
+        #container header #navbarCollapse li {
+          font-size: 1.2em; } }
+    #container header #navbarCollapse #mobilemedia {
+      position: relative;
+      top: 4em; }
+    #container header #navbarCollapse #header-login {
+      width: 6em; }
+      #container header #navbarCollapse #header-login:hover {
+        background-color: Snow;
+        background-color: white;
+        color: "Alizarin crimson";
+        color: #fa5757;
+        border: 2px solid red; }
+    @media screen and (max-width: 767px) {
+      #container header #navbarCollapse #header-login {
+        background-color: transparent;
+        color: Snow;
+        color: white;
+        border: 4px solid white;
+        width: 100%; } }
   #container .container {
     margin-top: -5em; }
     #container .container .btnHover:hover, #container .container .container__firstchild #getonchromebtn:hover, #container .container__firstchild .container #getonchromebtn:hover, #container .container .container__thirdchild #addbtnChrome:hover, #container .container__thirdchild .container #addbtnChrome:hover, #container .container .container__thirdchild #addbtnFirefox:hover, #container .container__thirdchild .container #addbtnFirefox:hover, #container .container .container__thirdchild #addbtnOpera:hover, #container .container__thirdchild .container #addbtnOpera:hover {
