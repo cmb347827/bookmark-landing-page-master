@@ -178,6 +178,7 @@ body {
                  background-color: transparent;
                  @include font-color(map-get($colors,White),nth($fallback-colors,5));
                  border: 4px solid white;
+                 font-size: 2rem;
                  width: 100%;
               }
             }
