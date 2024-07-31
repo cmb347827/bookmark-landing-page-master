@@ -100,6 +100,9 @@ body {
   a{
      @include font-color(map-get($colors,White),nth($fallback-colors,5));
   }
+  #mobilelogo{
+    filter:brightness(0) saturate(100%) invert(92%) sepia(3%) saturate(3990%) hue-rotate(191deg) brightness(106%) contrast(105%);
+  }
 }
 
 #container{
@@ -140,10 +143,43 @@ body {
            border: 2px solid red;
         }
         #close{
-          
           filter:brightness(0) saturate(100%) invert(92%) sepia(3%) saturate(3990%) hue-rotate(191deg) brightness(106%) contrast(105%);
         }
+        nav{
+          padding: 4em 2em 0 2em;
+        }
+        #navbarCollapse, #mobilelogo,#menubutton{
+          //width:90%;
+        }
+        #navbarCollapse{
+            button{
+              width:80%;
+            }
+            li{
+              width:80%;
+              text-align: center;
+              a{
+                border-bottom: 1px solid white;
+              }
+            }
+            li a , button{
+              font-size: 2.5rem;
+              padding: 0.2em;
+
+            }
+            #mobilemedia{
+              position:relative;
+              top: 1em;
+            }
+        }
         
+        @media screen and(max-width:767px){
+          #header-login{
+             background-color: transparent;
+             @include font-color(map-get($colors,White),nth($fallback-colors,5));
+             border: 4px solid white;
+          }
+        }
       }
       
       .container{

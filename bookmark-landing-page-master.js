@@ -20,6 +20,7 @@ $(window).on('load',function(){
 	const width= window.innerWidth;
 	if(width<768){
 	   $('#mobilelogo').toggleClass('show');
+	   $('#mobilemedia').toggleClass('show');
 	}
 	if(width>=768){
 		$('#desktoplogo').toggleClass('show');
