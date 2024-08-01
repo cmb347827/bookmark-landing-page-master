@@ -12,8 +12,9 @@ const data ={
 	regex : /^\w+@\w+\.{1}(com|net){1}$/,
 	email: document.getElementById('email'),
 	subscribe: document.getElementById('contact'),
-	feedback: document.querySelector('.invalid-feedback'),
-	erricon:document.getElementById('error-icon'),
+	//feedback: document.querySelector('.invalid-feedback'),
+	//erricon:document.getElementById('error-icon'),
+	errors: document.getElementById('errors'),
 }
 
 $(window).on('load',function(){
@@ -37,7 +38,7 @@ $(window).on('load',function(){
 		$('#open').toggleClass('hidden');
 		$('#nav').removeClass('custom-nav');
     });
-	 
+	
 	$(data.subscribe).on('click',function(){
 		dataFailed();
 	});

@@ -94,19 +94,23 @@ body {
   height:100vh;
   opacity:0.8;
   position:absolute;
-  top:5px;
+  top:0;
+  left:0;
   display:block;
   @include bg-color(map-get($colors,Black),nth($fallback-colors,6));
   a{
      @include font-color(map-get($colors,White),nth($fallback-colors,5));
   }
   #mobilelogo{
+    
     filter:brightness(0) saturate(100%) invert(92%) sepia(3%) saturate(3990%) hue-rotate(191deg) brightness(106%) contrast(105%);
+    
     margin-left:3em;
     @media screen and(min-width:768px){
        margin-left:0.2em;
     }
   }
+  
   #menubutton{
     margin-right: 3em;
     @media screen and(min-width:768px){
@@ -175,6 +179,7 @@ body {
             }
             #header-login{
               width: 6em;
+              margin-top:0.2em;
               &:hover{
                   @include bg-color(map-get($colors,White),nth($fallback-colors,5));
                   @include font-color(map-get($colors,Soft Red),nth($fallback-colors,2));
