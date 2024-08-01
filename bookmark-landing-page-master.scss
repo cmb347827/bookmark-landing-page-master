@@ -103,9 +103,15 @@ body {
   #mobilelogo{
     filter:brightness(0) saturate(100%) invert(92%) sepia(3%) saturate(3990%) hue-rotate(191deg) brightness(106%) contrast(105%);
     margin-left:3em;
+    @media screen and(min-width:768px){
+       margin-left:0.2em;
+    }
   }
   #menubutton{
     margin-right: 3em;
+    @media screen and(min-width:768px){
+       margin-right:0.2em;
+    }
   }
 }
 
@@ -147,18 +153,20 @@ body {
         }
         #navbarCollapse{
             width:90%;
-            
+            .navbar-nav{
+              padding:0;
+            }
             li {
               width:80%;
               text-align: center;
               a{
                 font-size: 2rem;
                 border-bottom: 1px solid white;
+                @media screen and(min-width:768px){
+                  font-size: 1em;
+                }
               }
               padding: 0.2em;
-              @media screen and(min-width:768px){
-                font-size: 1.2em;
-              }
             }
             
             #mobilemedia{
