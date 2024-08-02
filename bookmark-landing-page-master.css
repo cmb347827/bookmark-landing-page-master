@@ -59,8 +59,13 @@ body {
     color: Snow;
     color: white; }
   .custom-nav #mobilelogo {
-    filter: brightness(0) saturate(100%) invert(92%) sepia(3%) saturate(3990%) hue-rotate(191deg) brightness(106%) contrast(105%);
     margin-left: 3em; }
+    .custom-nav #mobilelogo g path {
+      fill: white; }
+    .custom-nav #mobilelogo g g path {
+      fill: black; }
+    .custom-nav #mobilelogo g g circle {
+      fill: white; }
     @media screen and (min-width: 768px) {
       .custom-nav #mobilelogo {
         margin-left: 0.2em; } }
@@ -78,7 +83,7 @@ body {
   #container button[disabled], #container button[aria-disabled=true] {
     opacity: 0.5; }
   #container button:focus, #container a:focus {
-    border: 3px solid orange; }
+    border: 2px solid orange; }
   #container .red-hover:hover {
     filter: brightness(0) saturate(100%) invert(13%) sepia(100%) saturate(3865%) hue-rotate(348deg) brightness(112%) contrast(93%); }
   #container .gray-font {
