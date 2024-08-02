@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   
   <link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/yxgKFKLM/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -43,7 +45,7 @@
                 <div class="col order-last order-md-first">
                     <h1>A Simple Bookmark Manager</h1>
 
-                    <p>A clean and simple interface to organize your favourite websites. Open a new 
+                    <p class="gray-font">A clean and simple interface to organize your favourite websites. Open a new 
                     browser tab and see your sites load instantly. Try it for free.</p>
                     <div class="d-flex">
                         <button  id='getonchromebtn' class='btn me-4 ' type='button'>Get it on Chrome</button>
@@ -56,21 +58,21 @@
                 </div>
             </section>
             
-            <section class="row container__secondchild d-flex flex-column align-items-center">
+            <section class="row container__secondchild d-flex flex-column align-items-center ">
                 <div class="col text-center mb-4">
                     <h2>Features</h2>
 
-                    <p>Our aim is to make it quick and easy for you to access your favourite websites. 
+                    <p class="gray-font">Our aim is to make it quick and easy for you to access your favourite websites. 
                     Your bookmarks sync between your devices so you can access them on the go.</p>
                 </div>
-                <ul class="col nav nav-underline mb-3 d-flex flex-md-row flex-column align-items-center " role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button tabindex='0' class="nav-link active custom-border custom-font-tabs" aria-current="page" id="underline-bookmark-tab" data-bs-toggle="pill" data-bs-target="#underline-bookmark" type="button" role="tab" aria-controls="underline-bookmark" aria-selected="true">Simple Bookmarking</button>
+                <ul class="col tabs-border nav nav-underline mb-3 d-flex flex-md-row flex-column align-items-center" role="tablist">
+                    <li class="nav-item d-flex flex-column align-items-center" role="presentation">
+                      <button tabindex='0' class="nav-link active custom-border custom-font-tabs " aria-current="page" id="underline-bookmark-tab" data-bs-toggle="pill" data-bs-target="#underline-bookmark" type="button" role="tab" aria-controls="underline-bookmark" aria-selected="true">Simple Bookmarking</button>
                     </li>
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item d-flex flex-column align-items-center" role="presentation">
                       <button tabindex='0' class="nav-link custom-border custom-font-tabs" id="underline-search-tab" data-bs-toggle="pill" data-bs-target="#underline-search" type="button" role="tab" aria-controls="underline-search" aria-selected="false">Speedy Searching</button>
                     </li>
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item d-flex flex-column align-items-center" role="presentation">
                       <button tabindex='0' class="nav-link custom-border custom-font-tabs" id="underline-share-tab" data-bs-toggle="pill" data-bs-target="#underline-share" type="button" role="tab" aria-controls="underline-share" aria-selected="false">Data Sharing</button>
                     </li>
                 </ul>
@@ -79,7 +81,7 @@
                             <div class="col d-flex flex-column flex-md-row">
                                 <div class=" order-last ms-md-4 top-margin text-center text-md-start ">
                                     <h3>Bookmark in one click</h3>
-                                    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                                    <p class="gray-font">Organize your bookmarks however you like. Our simple drag-and-drop interface 
                                     gives you complete control over how you manage your favourite sites.</p>
                                     <button  class='btn text-bg-primary' type='button'>More Info</button>
                                 </div>
@@ -93,7 +95,7 @@
                             <div class="col d-flex flex-column flex-md-row">
                                 <div class="order-last ms-md-4 top-margin text-center text-md-start">
                                     <h3>Intelligent search</h3>
-                                    <p>Our powerful search feature will help you find saved sites in no time at all. 
+                                    <p class="gray-font">Our powerful search feature will help you find saved sites in no time at all. 
                                         No need to trawl through all of your bookmarks.</p>
                                     <button class='btn text-bg-primary' type="button"> More Info</button>
                                 </div>
@@ -107,7 +109,7 @@
                             <div class="col d-flex flex-column flex-md-row">
                                 <div class="order-last ms-md-4 top-margin text-center text-md-start">
                                     <h3>Share your bookmarks</h3>
-                                    <p>Easily share your bookmarks and collections with others. Create a shareable 
+                                    <p class="gray-font">Easily share your bookmarks and collections with others. Create a shareable 
                                     link that you can send at the click of a button.</p>
                                     <button class='btn text-bg-primary' type='button'>More Info</button>
                                 </div>
@@ -122,7 +124,7 @@
             <section class="row d-flex flex-column  container__thirdchild ">
                 <div class="col text-center">
                     <h3>Download the extension</h3>
-                    <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+                    <p class="gray-font">We’ve got more browsers in the pipeline. Please do let us know if you’ve 
                       got a favourite you’d like us to prioritize.</p>
                 </div>
                 <div class="col">
@@ -131,7 +133,7 @@
                             <svg class='img-fluid' xmlns="http://www.w3.org/2000/svg" width="102" height="100"><g fill="none"><path fill="#E16B5A" d="M50.768.01s30.01-1.325 45.916 28.249H48.217s-9.154-.296-16.957 10.594c-2.25 4.561-4.65 9.27-1.95 18.538-3.9-6.472-20.708-35.164-20.708-35.164S20.457 1.186 50.768.009z"/><path fill="#FFD464" d="M95.122 75.095S81.284 101.238 47.21 99.952C51.414 92.82 71.45 58.8 71.45 58.8s4.837-7.626-.875-19.696c-2.903-4.192-11.7-8.586-21.237-10.928 7.67-.075 47.25.005 47.25.005s12.653 20.59-1.466 46.915z"/><path fill="#74B340" d="M6.628 75.294s-16.17-24.825 2.004-53.116l24.225 41.163s4.314 7.92 17.832 9.104c5.153-.368 10.514-.682 17.351-7.607C64.27 71.387 47.327 100 47.327 100s-24.51.448-40.7-24.706z"/><ellipse cx="50.646" cy="50.406" fill="#FFF" rx="23.064" ry="22.656"/><ellipse cx="50.638" cy="50.406" fill="#2995CC" rx="18.292" ry="17.969"/><path fill="#268CBF" d="M50.643 32.441c-.364 0-.724.014-1.082.034 9.598.55 17.209 8.369 17.209 17.934 0 9.568-7.611 17.386-17.21 17.937.36.02.72.034 1.083.034 10.101 0 18.292-8.046 18.292-17.97 0-9.923-8.19-17.969-18.292-17.969z"/></g></svg>
                             <div class="fullwidth">
                                 <h4>Add to Chrome</h4>
-                                <p class="bottom-dash-border">Minimum version 62</p>
+                                <p class="bottom-dash-border gray-font">Minimum version 62</p>
                                 <button id='addbtnChrome' class='btn' type='button'>Add & Install Extension</button>
                             </div>
                         </div>
@@ -139,7 +141,7 @@
                             <svg class='img-fluid' xmlns="http://www.w3.org/2000/svg" width="105" height="100"><path fill="#FF9800" d="M105 50c0 28.862-23.513 50-52.5 50S0 76.588 0 47.726c0-9.043 2.33-17.59 6.392-25a.995.995 0 0 1 .23-.366C4.338 18.956 3.334 10.318 9.128 4.541c0 2.411 1.464 6.548 3.104 9.638 1.326 2.457 2.737 4.228 3.741 4 2.284-.543 10.27-.543 11.412 0 1.877-2.405 6.445-9.09 13.703-9.09-4.062 4.045-15.704 18.185 4.567 18.185h4.568L36.52 36.363s1.556 3 0 4.548c-1.732-1.732-9.128 1.862-9.128 6.815s5.296 11.363 15.98 11.363c10.683 0 7.986-4.548 13.696-4.548 5.709 0 6.844 4.548 6.844 4.548-7.855 0-13.558 9.09-22.824 9.09 4.567 3.364 7.58 4.547 13.696 4.547 15.113 0 27.392-12.225 27.392-27.274 0-6.09-2.008-11.683-5.388-16.224a27.414 27.414 0 0 1 10.96 19.498 40.554 40.554 0 0 0 1.279-10.089c0-13.683-5.84-31.776-15.98-38.637C87.655 4.358 105 18.466 105 45.452V50z"/></svg>
                             <div>
                                 <h4>Add to Firefox</h4>
-                                <p class="bottom-dash-border">Minimum version 55</p>
+                                <p class="bottom-dash-border gray-font">Minimum version 55</p>
                                 <button id='addbtnFirefox' class='btn' type="button">Add & Install Extension</button>
                             </div>
                         </div>
@@ -147,7 +149,7 @@
                             <svg class='img-fluid' xmlns="http://www.w3.org/2000/svg" width="96" height="100"><path fill="#EB6060" fill-rule="evenodd" d="M48 100C21.49 100 0 77.614 0 50S21.49 0 48 0s48 22.386 48 50-21.49 50-48 50zm0-10c13.807 0 25-17.909 25-40S61.807 10 48 10 23 27.909 23 50s11.193 40 25 40z"/></svg>
                             <div>
                                 <h4>Add to Opera</h4>
-                                <p class="bottom-dash-border">Minimum version 46</p>
+                                <p class="bottom-dash-border gray-font">Minimum version 46</p>
                                 <button id='addbtnOpera' class='btn' type='button'>Add & Install Extension</button>
                             </div>
                         </div>
@@ -158,7 +160,7 @@
                 <div class="col">
                     <h4>Frequently Asked Questions</h4>
                     
-                    <p>Here are some of our FAQs. If you have any other questions you’d like 
+                    <p class="gray-font">Here are some of our FAQs. If you have any other questions you’d like 
                     answered please feel free to email us.</p>
                 </div>
                 
