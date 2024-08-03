@@ -4,16 +4,16 @@ const validateEmail=(email)=> (data.regex).test(email.value);
 const dataPassed=()=>{
 	//$(data.feedback).css({'display':'none'});
 	if($(data.errors).hasClass('hidden')===false){
-	   $(data.errors).toggleClass('hidden');
-	}
+		$(data.errors).toggleClass('hidden');
+	 }
 	data.subscribe.setAttribute('aria-disabled','false');
 	data.subscribe.disabled = false;
 }
 const dataFailed=()=>{
     //$(data.feedback).css('display','block');
 	if($(data.errors).hasClass('hidden')){
-	   $(data.errors).toggleClass('hidden');
-	}
+		$(data.errors).toggleClass('hidden');
+	 }
 	//data.subscribe.setAttribute('aria-disabled','true');     //the design showed a abled button, also on error so disable these two lines.
 	//data.subscribe.setAttribute('disabled','');
 }

@@ -343,14 +343,24 @@ body {
           }
         }
         &__fifthchild{
-          @include font-color(map-get($colors,White),nth($fallback-colors,5));
-          @include bg-color(map-get($colors,Soft Blue),nth($fallback-colors,1));
-          min-height: 10em;
+           @include font-color(map-get($colors,White),nth($fallback-colors,5));
+           @include bg-color(map-get($colors,Soft Blue),nth($fallback-colors,1));
+           min-height: 20em;
+           .minheight{
+             min-height: 5em;
+           }
           .move-right-up{
             //used to move the error icon in position within input.
             position:relative;
-            left: 85%;
+            margin-left:3em;
             bottom: 2em;
+            @media screen and(min-width:768px){
+               margin-left:0;
+            }
+          }
+          .invalid-feedback{
+             position:relative;
+             top:-0.5em;
           }
           input,button,.invalid-feedback{
              width: 100%;
@@ -359,6 +369,8 @@ body {
              @include margin(0 auto);
           }
           #contact{
+            position:relative;
+            top:1em;
             @include bg-color(map-get($colors,Soft Red),nth($fallback-colors,2));
             @include font-color(map-get($colors,White),nth($fallback-colors,5));
             &:hover{
@@ -366,9 +378,12 @@ body {
               @include font-color(map-get($colors,Soft Red),nth($fallback-colors,2));
               border: 2px solid red;
             }
+            @media screen and(min-width:768px){
+              top:0;
+            }
           }
-          
         }
+
         &__sixthchild{
           @include bg-color(map-get($colors,Very Dark Blue),nth($fallback-colors,4));
           svg path{
