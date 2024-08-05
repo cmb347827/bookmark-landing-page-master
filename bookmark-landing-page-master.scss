@@ -48,7 +48,7 @@ body {
   @include bg-color(map-get($colors,White),nth($fallback-colors,5));
   @include font-color(map-get($colors,Black),nth($fallback-colors,6));
   font: {
-     size: $font_size-16;
+     size: $font_size-18;
      weight: $font_weight-normal;
 	   family: "Rubik", sans-serif;
   }
