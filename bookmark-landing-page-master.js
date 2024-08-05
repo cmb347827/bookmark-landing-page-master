@@ -17,16 +17,9 @@ const data ={
 	errors: document.getElementById('errors'),
 }
 
-$(window).on('load',function(){
-	const width= window.innerWidth;
-	if(width<768){
-	   $('#mobilelogo').toggleClass('show');
-	   $('#mobilemedia').toggleClass('show');
-	}
-	if(width>=768){
-		$('#desktoplogo').toggleClass('show');
-	}
 
+$(window).on('load',function(){
+    
 	$("#navbarCollapse").on("show.bs.collapse", function(){
         //menu is collapsed, show close icon.
 		$('#open').toggleClass('hidden');

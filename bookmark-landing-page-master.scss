@@ -62,6 +62,18 @@ body {
 .relativeouter{
   position: relative;
 }
+#desktop-nav{
+  display:none;
+  @media screen and(min-width:768px){
+     display:block;
+  }
+}
+#mobile-nav{
+  display:block;
+  @media screen and(min-width:768px){
+     display:none;
+  }
+}
 
 
 .shape{
@@ -129,7 +141,7 @@ body {
 #container{
      @include margin(0 auto);
       //cutoff the blue shape on the right/left side
-      overflow:hidden;
+      //overflow:hidden;
       section{
         margin-top: 10em;
       }
@@ -148,17 +160,17 @@ body {
       .gray-font{
         @include font-color(lighten(map-get($colors,Grayish Blue),7),nth($fallback-colors,3));
       }
-      header,main,footer{
+      /*header,main,footer{
           max-width: 768px;
           @include margin(0 auto);
           @include padding(1em);
           @include bg-color(map-get($colors,White),nth($fallback-colors,5));
-          overflow:hidden;
+          //overflow:hidden;
           @media screen and(min-width: 768px){
               @include padding(4em);
               max-width: 1400px;
           }
-      }
+      }*/
       header{
         
         #close{
@@ -171,7 +183,6 @@ body {
             }
             li {
               width:80%;
-              text-align: center;
               a{
                 font-size: 2rem;
                 font-weight:$font_weight-medium;
@@ -182,37 +193,49 @@ body {
               }
               padding: 0.2em;
             }
-            
             #mobilemedia{
               position:relative;
               top: 4em;
             }
-            #header-login{
+            #mobile-header-login{
               width: 6em;
               margin-top:0.2em;
-              &:hover{
-                  @include bg-color(map-get($colors,White),nth($fallback-colors,5));
-                  @include font-color(map-get($colors,Soft Red),nth($fallback-colors,2));
-                  border: 2px solid red;
-              }
             }
-            @media screen and(max-width:767px){
-              #header-login{
-                 background-color: transparent;
-                 @include font-color(map-get($colors,White),nth($fallback-colors,5));
-                 border: 4px solid white;
-                 font-size: 2rem;
-                 width: 100%;
-              }
-            }
-
         }
-        
+        @media screen and(min-width:767px){
+            #desktop-nav{
+                display:flex;
+                flex-direction:row;
+                justify-content: space-between;
+                
+                #desktop-header-login{
+                  @include bg-color(map-get($colors,Soft Red),nth($fallback-colors,2));
+                  font-size: 1rem;
+                  width: 100%;
+                  &:hover{
+                      @include bg-color(map-get($colors,White),nth($fallback-colors,5));
+                      @include font-color(map-get($colors,Soft Red),nth($fallback-colors,2));
+                      border: 2px solid red;
+                  }
+                }
+                ul{
+                    display:flex;
+                    flex-direction:row;
+                    justify-content: space-around;
+                    list-style-type:none;
+                }
+            }
+        }
         
       }
       
       .container{
-        margin-top: -5em;
+        section,nav{
+            @media screen and(min-width:768px){
+              position:relative;
+              top: 10em;
+            }
+        }
         .btnHover{
             &:hover{
               @include bg-color(lighten(map-get($colors,Grayish Blue),31),nth($fallback-colors,3));
@@ -222,6 +245,7 @@ body {
         }
         
         &__firstchild{
+           
           .transform-right-down{
             top: 25%;
             left: 55%;
@@ -247,6 +271,10 @@ body {
           }
         }
         &__secondchild{
+           p{
+            max-width:80%;
+            @include margin(0 auto);
+           }
           .transform-left-down{
             top: 45%;
             right: 55%;
@@ -410,6 +438,10 @@ body {
           padding:0;
           @include margin(0 auto);
 
+        }
+        @media screen and(min-width:768px){
+          position:relative;
+          top: 10em;
         }
       }
 }
