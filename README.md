@@ -84,8 +84,8 @@ Users should be able to:
 
 ### Useful resources
 
-[Making responsive rectangles](https://bethsoderberg.com/blog/making-responsive-rectangles-and-squares-with-css/)
-[Making an absolute box responsive](https://www.shecodes.io/athena/50922-how-to-make-an-absolute-box-responsive-with-css)
+-[Making responsive rectangles](https://bethsoderberg.com/blog/making-responsive-rectangles-and-squares-with-css/)
+-[Making an absolute box responsive](https://www.shecodes.io/athena/50922-how-to-make-an-absolute-box-responsive-with-css)
 
 
 
