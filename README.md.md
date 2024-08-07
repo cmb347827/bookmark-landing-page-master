@@ -50,11 +50,11 @@ Users should be able to:
 ### What I learned
   
   -I could reuse code from another project , my junior project insure landing page master , for adding the hamburger menu.
-  -I could use Bootstrap tabs for the tabs section (see link)
+  - I also could reuse code from another project , my junior project huddle landing page,  for validating email login.
+  -I could use Bootstrap tabs for the tabs section 
   -I got rid of the unnesscary scss folder and custom file for breakpoints. I thought for the screenshot in the profile at frontendmentor the sizes had to be either 375px and 1440px
   - for the responsive pill shaped blue background , I had to use padding and :before(see link) 
     and % for the size/position(see another link)
-  - back to using BEM naming
   - I had different html (see below), for the tabs first , with an added div for the d-flex and without the inner row/col as in the top shape divs, so it didn't have the same widths and I could not understand why not. 
   ```
      <div class="col tab-content " >
@@ -74,13 +74,19 @@ Users should be able to:
                         </div>
       </div>
   ```
-  - changed the color of the down arrow of the accordion (see stackoverflow post)
+  - changed the color of the down arrow of the accordion by adding a custom class name so to no override default values.
+
+  
 
 ### Continued development
 
 - Daily tutorials and projects in HTML5, CSS3, Javascript, Bootstrap, Sass/SCSS. For now, in time I will go re-learn React ect.
 
 ### Useful resources
+
+[Making responsive rectangles](https://bethsoderberg.com/blog/making-responsive-rectangles-and-squares-with-css/)
+[Making an absolute box responsive](https://www.shecodes.io/athena/50922-how-to-make-an-absolute-box-responsive-with-css)
+
 
 
 ## Author
